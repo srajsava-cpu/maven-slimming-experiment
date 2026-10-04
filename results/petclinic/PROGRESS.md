@@ -1,6 +1,6 @@
 # petclinic — progress
 
-Regenerated 2026-10-04 02:57 UTC from `changes/*/summary.json` (script: `results/scripts/progress_md.py`). Artifact delta is against the unmodified baseline JAR and is cumulative over the changes kept before it. 'checklist only' = full test suite passed, the behaviour checklist caught the break.
+Regenerated 2026-10-04 03:15 UTC from `changes/*/summary.json` (script: `results/scripts/progress_md.py`). Artifact delta is against the unmodified baseline JAR and is cumulative over the changes kept before it. 'checklist only' = full test suite passed, the behaviour checklist caught the break.
 
 | candidate | change | result | tests (full verify) | checklist | artifact Δ bytes vs baseline | libs | caught by |
 |---|---|---|---|---|---|---|---|

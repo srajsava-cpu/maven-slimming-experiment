@@ -3336,6 +3336,97 @@
    "verdict": "KEEP-ELIGIBLE"
   }
  },
+ "classification": {
+  "note": "library bytes are exact JAR sizes (calculated from measured files); the free+conditional and full states were built and measured; a free-only state was not built. State key 'free-only' in 'states' = free + conditional (named before the conditional class existed).",
+  "library_bytes_per_jar": {
+   "error_prone_annotations-2.49.0.jar": 20255,
+   "snakeyaml-2.6.jar": 340068,
+   "HdrHistogram-2.2.2.jar": 177206,
+   "micrometer-jakarta9-1.17.0.jar": 54767,
+   "aspectjweaver-1.9.25.1.jar": 2190661,
+   "spring-aspects-7.0.8.jar": 50015,
+   "tomcat-embed-websocket-11.0.22.jar": 286650,
+   "log4j-to-slf4j-2.25.4.jar": 24172,
+   "log4j-api-2.25.4.jar": 351127,
+   "jakarta.inject-api-2.0.1.jar": 10681,
+   "mysql-connector-j-9.7.0.jar": 2607237,
+   "postgresql-42.7.11.jar": 1142677,
+   "spring-boot-jarmode-tools-4.1.0.jar": 53966
+  },
+  "subtotals": {
+   "free": {
+    "changes": [
+     "A16-starter-restclient",
+     "A18-starter-thymeleaf-test",
+     "A19-starter-validation-test",
+     "A21-starter-actuator-test",
+     "A23-starter-cache-test",
+     "B21-commons-codec-test",
+     "B22-awaitility-test",
+     "B24-boot-restclient-test",
+     "C11-error-prone-annotations"
+    ],
+    "library_bytes": 20255,
+    "pct_of_baseline_jar": 0.03
+   },
+   "conditional": {
+    "changes": [
+     "B01-snakeyaml",
+     "B02-HdrHistogram",
+     "B04-micrometer-jakarta9",
+     "C01-aspectjweaver",
+     "C02-spring-aspects",
+     "C03-tomcat-embed-websocket",
+     "C09-log4j-to-slf4j",
+     "C18-jakarta-inject-api"
+    ],
+    "library_bytes": 3485347,
+    "pct_of_baseline_jar": 5.29
+   },
+   "feature-removing": {
+    "changes": [
+     "A01-devtools",
+     "C04-no-jarmode-tools",
+     "F01-drop-mysql",
+     "F02-drop-postgres",
+     "F03-drop-testcontainers"
+    ],
+    "library_bytes": 3803880,
+    "pct_of_baseline_jar": 5.78
+   }
+  },
+  "found_by": {
+   "not_suggested_by_tools_group_C": 2933561,
+   "depclean_transitive": 572041,
+   "dependency_analyze": 0
+  }
+ },
+ "candidate_counts": {
+  "unique_candidates": 70,
+  "evaluations": 80,
+  "kept": 22,
+  "kept_by_class": {
+   "free": 9,
+   "conditional": 8,
+   "feature-removing": 5
+  },
+  "noops": 4,
+  "rejected": 44,
+  "breaking_removals": 45,
+  "rejected_diff_files": 51,
+  "breaking_detected_by": {
+   "compile": 12,
+   "tests": 21,
+   "checklist_only": 11,
+   "neither": 1
+  },
+  "missed_by_test_suite": "12 of 45"
+ },
+ "corrections": [
+  "group-C total previously stated as 2,950,725 B; listed artifact deltas sum to 2,938,717 B; report now uses exact library bytes (2,933,561 B)",
+  "'8 exclusions of runtime libraries' corrected: 9 runtime-library changes (10 JARs) in free+conditional",
+  "log4j-to-slf4j reclassified from free to conditional"
+ ],
  "verification": {
   "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
   "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\"",
@@ -3443,5 +3534,5 @@
    "report_files": 16
   }
  },
- "verification_mismatch_explained": "free +31 B, full +56 B vs my builds: only BOOT-INF/classes/git.properties differs (branch/build user/commit metadata); counts identical"
+ "verification_mismatch_explained": "free+conditional +31 B, full +56 B vs my builds: only BOOT-INF/classes/git.properties differs (branch/build user/commit metadata); counts identical"
 }
