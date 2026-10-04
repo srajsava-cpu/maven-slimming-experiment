@@ -67,8 +67,8 @@ A "free only" state (just error_prone_annotations plus the test-scope changes) w
 | Declared deps (compile / runtime / test) | 9 / 7 / 12 = 28 | 9 / 7 / 7 = 23 | −5 | 8 / 5 / 3 = 16 | −12 | −7 |
 | Resolved deps, total (`dependency:tree`) | 171 | 150 | −21 (−12.3 %) | 131 | −40 (−23.4 %) | −19 |
 | — compile (direct + transitive) | 89 | 82 | −7 | 81 | −8 | −1 |
-| — runtime | 17 | 15 | −2 | 13 | −4 | −2 |
-| — test | 65 | 53 | −12 | 37 | −28 | −16 |
+| — runtime | 17 | 14 | −3 | 12 | −5 | −2 |
+| — test | 65 | 54 | −11 | 38 | −27 | −16 |
 | Tests run / failed / skipped | 81 / 0 / 0 | 81 / 0 / 0 | same tests | 77 / 0 / 0 | −4 (MySQL + Postgres integration tests deleted with the feature) | −4 |
 | Startup, wall to first HTTP 200 on `/actuator/health`, 10 runs: median [min–max] s | 9.312 [9.040–10.059] | 9.261 [8.938–10.372] | no measurable change | 9.133 [8.767–9.539] | no measurable change | — |
 | Startup, Spring's "Started … in" (same runs) s | 8.296 [8.020–9.042] | 8.253 [7.947–9.127] | no measurable change | 8.149 [7.725–8.591] | no measurable change | — |
@@ -163,7 +163,7 @@ Otherwise it was reverted. Feature-removing candidates (F01–F03) used a declar
 | feature-removing | A01 C04 F01 F02 F03 | 3,803,880 | 5.78 % | full state minus free + conditional: −3,803,880 library bytes, −3,813,489 artifact bytes (measured) |
 | **all kept** | 22 | 7,309,482 | 11.10 % | full state: −7,326,516 artifact bytes (−11.13 %, measured) |
 
-The test-scope changes shrink the test classpath (resolved test dependencies 65 → 53) and save 0 runtime bytes.
+The test-scope changes shrink the test classpath (resolved test dependencies 65 → 54) and save 0 runtime bytes.
 
 ### 3.2 The conditional class: what each kept runtime exclusion gives up
 
@@ -279,7 +279,7 @@ Measured = removed and observed. Static = verdict from reading code or config.
 | spring-boot-docker-compose (test) | false positive | config-driven (`spring.docker.compose.*` in the Postgres test); no code reference | measured A22 (tests) |
 | spring-boot-starter-cache-test (test) | **truly unused** | — | measured A23 (kept) |
 
-**Result: 23 flagged → 17 false positives, 6 removable (truly unused; all free, 0 runtime bytes).**
+**Result: 23 flagged → 17 false positives, 6 removable (truly unused, 0 runtime bytes): 5 test-scope starters classed *free* and devtools classed *feature-removing* (development-time restart/live-reload; see 3.1).**
 * The 6 removable ones are 5 test-scope starters and the optional devtools. **None of the 6 is in the JAR**, so removing them saves 0 runtime bytes.
 * All 23 verdicts are measured.
 * This differs from the earlier Mac run, where all 23 were judged false positives. Here the 6 removals were measured, then re-measured as part of the free + conditional and full states, and independently reproduced by the verification subagent (both variants 81/81 or 77/77 tests).
@@ -307,7 +307,7 @@ It ran without failing, but with a partial-analysis error: `[ERROR] ZIP bomb det
 11 + 13 + 3 + 1 + 3 + 6 = 37.
 
 **DepClean totals.**
-* 55 flagged: 12 truly unused (6 direct, 6 transitive; all test-scope or devtools), 3 conditional (transitive runtime), 29 false positives (12 direct, 17 transitive), 11 not actionable (POM-only).
+* 55 flagged: 12 truly unused (6 direct, 6 transitive), of which 11 are test scope and classed *free* and 1 is devtools, classed *feature-removing*; 3 conditional (transitive runtime); 29 false positives (12 direct, 17 transitive); 11 not actionable (POM-only).
 * Runtime library bytes saved by acting on DepClean's list: **572,041 B**, all conditional. That is 16.32 % of the free + conditional library saving. **0 B** of it is free.
 
 ### 4.3 Savings the tools did not suggest (group C, from reading the tree and the JAR)

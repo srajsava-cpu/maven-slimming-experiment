@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Assemble results/petclinic/metrics.json and print Markdown tables for the report from the raw files."""
-import csv, glob, json, os, re, statistics as st, subprocess
+import collections, csv, glob, json, os, re, statistics as st, subprocess
 
 R = "/workspaces/maven-slimming-experiment/results/petclinic"
 J = lambda p: json.load(open(os.path.join(R, p)))
@@ -114,6 +114,48 @@ m["corrections"] = ["group-C total previously stated as 2,950,725 B; listed arti
                     "'8 exclusions of runtime libraries' corrected: 9 runtime-library changes (10 JARs) in free+conditional",
                     "log4j-to-slf4j reclassified from free to conditional"]
 json.dump(m, open(f"{R}/metrics.json", "w"), indent=1)
+# ---- final status per evaluation (added after review). The fields `verdict` and `checklist` in each
+# candidate record are the mechanical output of the strict rule (identical to *baseline* on every profile).
+# Kept feature-removing changes, and changes evaluated on top of them, were decided under a declared narrower
+# rule, so their strict-rule output is REJECT/FAIL by construction. `final_status` and `rule_applied` record
+# the actual decision so the raw data does not contradict the report.
+STRICT = "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
+NARROW = ("declared narrower rule (feature-removing branch): verify passes; tests identical to baseline except the removed "
+          "database's own test classes; checklist identical to baseline on h2 and every remaining profile, the removed "
+          "profile expected to differ (it falls back to H2: only db-row differs); decided manually")
+AFTER_F = ("strict rule relative to the previous kept state on the full branch (F03/R01 state): same 77 tests and the same "
+           "checklist results as that state; only the expected db-row differences on mysql/postgres; decided manually")
+special = {
+    "F01-drop-mysql": ("kept", NARROW, "feature-removing"),
+    "F02-drop-postgres": ("kept", NARROW, "feature-removing"),
+    "F03-drop-testcontainers": ("kept", AFTER_F, "feature-removing consequence of F01/F02"),
+    "R01-revert-B03-jul-to-slf4j": ("kept", AFTER_F, "revert of B03; restores log routing (log-routing item = baseline)"),
+    "C18-jakarta-inject-api-on-full": ("kept", AFTER_F, "C18 applied to the full branch after its re-run was kept"),
+    "C18-jakarta-inject-api-rerun": ("kept", STRICT, "re-run after MySQL readiness fix (INCIDENTS #9); evaluated on the free + conditional branch"),
+    "C18-jakarta-inject-api": ("superseded", STRICT, "failed only on the mysql profile because of a harness readiness race (INCIDENTS #9); superseded by C18-jakarta-inject-api-rerun"),
+    "B03-jul-to-slf4j": ("rejected", STRICT, "passed the strict rule with the 57-item checklist, later found to break log routing; rejected retroactively and reverted by R01 (INCIDENTS #8)"),
+    "F01a-drop-mysql-too-broad": ("rejected", NARROW, "test compile error; redone as F01"),
+    "S-free-only": ("state-check", STRICT, "evaluation of the assembled free + conditional state, not a candidate"),
+}
+for cid, rec in m["candidates"].items():
+    if "noop" in rec:
+        rec.update(final_status="no-op", rule_applied=None)
+    elif cid in special:
+        st_, rule, note = special[cid]
+        rec.update(final_status=st_, rule_applied=rule, note=note, verdict_strict_rule=rec.get("verdict"))
+    elif cid.endswith("-rerun"):
+        rec.update(final_status="rejected" if rec["verdict"] == "REJECT" else "kept", rule_applied=STRICT,
+                   note="re-run after the disk incident (INCIDENTS #1); same verdict as the original run")
+    else:
+        rec.update(final_status="kept" if rec["verdict"] == "KEEP-ELIGIBLE" else "rejected", rule_applied=STRICT)
+m["candidates_field_note"] = ("`verdict`/`checklist` = mechanical strict-rule output against baseline; "
+                              "`final_status` = actual decision; `rule_applied` = rule used for that decision")
+m["candidate_counts"]["final_status_over_80_evaluations"] = {
+    "kept": 24, "rejected": 50, "no-op": 4, "superseded": 1, "state-check": 1,
+    "explanation": "kept 24 = 22 unique kept changes + R01 (revert of B03) + C18 re-applied on the full branch; "
+                   "rejected 50 = 44 unique rejected + F01a + 5 disk-incident re-runs"}
+assert collections.Counter(v["final_status"] for v in m["candidates"].values()) == collections.Counter(
+    {k: v for k, v in m["candidate_counts"]["final_status_over_80_evaluations"].items() if k != "explanation"})
 m["verification"] = json.load(open(f"{R}/verification/petclinic-verification.json"))
 m["verification_mismatch_explained"] = ("free+conditional +31 B, full +56 B vs my builds: only BOOT-INF/classes/git.properties differs "
                                         "(branch/build user/commit metadata); counts identical")
