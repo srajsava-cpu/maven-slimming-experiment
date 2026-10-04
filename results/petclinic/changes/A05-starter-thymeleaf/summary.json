@@ -1,0 +1,26 @@
+{
+ "verify_exit": 0,
+ "tests_run": 81,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {},
+ "same_tests_as_baseline": true,
+ "artifact_bytes": 64235218,
+ "lib_count": 88,
+ "artifact_delta_vs_baseline": -1596107,
+ "libs_removed_vs_baseline": [
+  "attoparser-2.0.7.RELEASE.jar",
+  "spring-boot-thymeleaf-4.1.0.jar",
+  "thymeleaf-3.1.5.RELEASE.jar",
+  "thymeleaf-spring6-3.1.5.RELEASE.jar",
+  "unbescape-1.1.6.RELEASE.jar"
+ ],
+ "libs_added_vs_baseline": [],
+ "resolved_total": 170,
+ "checklist": "FAIL",
+ "tests_pass": true,
+ "verdict": "REJECT"
+}

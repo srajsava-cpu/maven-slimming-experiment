@@ -1,0 +1,7 @@
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/R01-revert-B03-jul-to-slf4j/checklist/checklist-h2.json
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/R01-revert-B03-jul-to-slf4j/checklist/checklist-mysql.json
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/R01-revert-B03-jul-to-slf4j/checklist/checklist-postgres.json
+ERROR:  relation "owners" does not exist
+LINE 1: select count(*) from owners where last_name='Lovelace'
+                             ^
+done

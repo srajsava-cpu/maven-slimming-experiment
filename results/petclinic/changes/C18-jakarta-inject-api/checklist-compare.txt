@@ -1,0 +1,64 @@
+== h2
+57 baseline items, 57 candidate items, 0 differences
+== mysql
+57 baseline items, 1 candidate items, 58 differences
+  DIFF home: missing in candidate
+  DIFF home-de: missing in candidate
+  DIFF home-es: missing in candidate
+  DIFF find: missing in candidate
+  DIFF list-all: missing in candidate
+  DIFF list-p2: missing in candidate
+  DIFF list-davis: missing in candidate
+  DIFF search-one: missing in candidate
+  DIFF search-none: missing in candidate
+  DIFF owner1: missing in candidate
+  DIFF owner-missing: missing in candidate
+  DIFF owner-edit-form: missing in candidate
+  DIFF pet-new-form: missing in candidate
+  DIFF pet-edit-form: missing in candidate
+  DIFF visit-form: missing in candidate
+  DIFF vets-html: missing in candidate
+  DIFF vets-html-p2: missing in candidate
+  DIFF vets-json: missing in candidate
+  DIFF vets-xml: missing in candidate
+  DIFF vets-default: missing in candidate
+  DIFF oups: missing in candidate
+  DIFF notfound: missing in candidate
+  DIFF css: missing in candidate
+  DIFF img: missing in candidate
+  DIFF font: missing in candidate
+  DIFF favicon: missing in candidate
+  DIFF webjar-bs: missing in candidate
+  DIFF webjar-fa: missing in candidate
+  DIFF webjar-fa-font: missing in candidate
+  DIFF owner-create: missing in candidate
+  DIFF owner-created: missing in candidate
+  DIFF owner-create-invalid: missing in candidate
+  DIFF owner-update: missing in candidate
+  DIFF pet-create: missing in candidate
+  DIFF visit-create: missing in candidate
+  DIFF owner1-after: missing in candidate
+  DIFF act-root: missing in candidate
+  DIFF health: missing in candidate
+  DIFF health-db: missing in candidate
+  DIFF info: missing in candidate
+  DIFF metrics: missing in candidate
+  DIFF metric-jvm: missing in candidate
+  DIFF caches: missing in candidate
+  DIFF sbom: missing in candidate
+  DIFF sbom-app: missing in candidate
+  DIFF prometheus: missing in candidate
+  DIFF act-beans: missing in candidate
+  DIFF act-conditions: missing in candidate
+  DIFF act-configprops: missing in candidate
+  DIFF act-env: missing in candidate
+  DIFF act-loggers: missing in candidate
+  DIFF act-mappings: missing in candidate
+  DIFF act-scheduledtasks: missing in candidate
+  DIFF act-threaddump: missing in candidate
+  DIFF act-heapdump: missing in candidate
+  DIFF cache-hit: missing in candidate
+  DIFF db-row: missing in candidate
+  DIFF startup: missing in baseline
+== postgres
+57 baseline items, 57 candidate items, 0 differences

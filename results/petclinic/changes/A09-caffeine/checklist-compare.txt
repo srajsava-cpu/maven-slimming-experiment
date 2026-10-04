@@ -1,0 +1,9 @@
+== h2
+57 baseline items, 57 candidate items, 1 differences
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='cacheManager:vets->java.util.concurrent.ConcurrentHashMap'
+== mysql
+57 baseline items, 57 candidate items, 1 differences
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='cacheManager:vets->java.util.concurrent.ConcurrentHashMap'
+== postgres
+57 baseline items, 57 candidate items, 1 differences
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='cacheManager:vets->java.util.concurrent.ConcurrentHashMap'

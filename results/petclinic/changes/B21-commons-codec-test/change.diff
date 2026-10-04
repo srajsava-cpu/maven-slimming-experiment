@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index 63b373c..c7177c7 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -150,6 +150,12 @@
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-testcontainers</artifactId>
+       <scope>test</scope>
++      <exclusions>
++        <exclusion>
++          <groupId>commons-codec</groupId>
++          <artifactId>commons-codec</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+     <dependency>
+       <groupId>org.springframework.boot</groupId>

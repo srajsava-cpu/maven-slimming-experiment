@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index a948f09..d46929b 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -68,6 +68,12 @@
+     <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-data-jpa</artifactId>
++      <exclusions>
++        <exclusion>
++          <groupId>org.aspectj</groupId>
++          <artifactId>aspectjweaver</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+     <dependency>
+       <groupId>org.springframework.boot</groupId>

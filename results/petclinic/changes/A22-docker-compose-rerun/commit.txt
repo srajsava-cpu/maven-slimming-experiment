@@ -1,0 +1,1 @@
+6291baeebdf7f596a7333017da18b363aaa6afe6 A22-docker-compose-rerun: re-run after disk incident: remove spring-boot-docker-compose

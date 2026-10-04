@@ -1,0 +1,20 @@
+{
+ "verify_exit": 1,
+ "tests_run": 80,
+ "failures": 0,
+ "errors": 1,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {
+  "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+   2,
+   1
+  ]
+ },
+ "same_tests_as_baseline": false,
+ "resolved_total": 169,
+ "checklist": "skipped",
+ "tests_pass": false,
+ "verdict": "REJECT"
+}

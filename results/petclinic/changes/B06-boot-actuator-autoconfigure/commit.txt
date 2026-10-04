@@ -1,0 +1,1 @@
+ca0a815cb05bc4f4aa9cc725698697f28e21a11f B06-boot-actuator-autoconfigure: exclude org.springframework.boot:spring-boot-actuator-autoconfigure everywhere

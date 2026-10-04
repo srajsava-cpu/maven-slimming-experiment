@@ -1,0 +1,23 @@
+{
+ "builder": "paketobuildpacks/builder-noble-java-tiny@sha256:b95da27fce97b58037f0c11ae934760c50730da4c9a24976205b53638592eba9",
+ "run_image": "paketobuildpacks/ubuntu-noble-run-tiny:0.0.138",
+ "command": "./mvnw -B spring-boot:build-image -DskipTests -Dspring-boot.build-image.builder=<builder> -Dspring-boot.build-image.imageName=petclinic-<state>:measure",
+ "note": "size_docker_inspect = containerd image store disk usage (compressed blobs + unpacked snapshot, so changes appear ~2x); docker_save_bytes = size of the `docker save` OCI archive = compressed layer blobs (matches Docker CONTENT SIZE); the free-only delta of 3,625,984 B matches the JAR delta, so the larger inspect delta is the double counting described",
+ "states": {
+  "baseline": {
+   "id": "sha256:c44f576e36c5f5faecba507cf0824ff010ad0c3a7bc3e02848e853fd77ab4898",
+   "size_docker_inspect": 570913253,
+   "docker_save_bytes": 276368384
+  },
+  "free-only": {
+   "id": "sha256:8b519e59d18cd97cfc38d53667a2e585cd7442577848df0b2b4c51476ebbc610",
+   "size_docker_inspect": 563650021,
+   "docker_save_bytes": 272742400
+  },
+  "full": {
+   "id": "sha256:1246e69673423705aac7160a024f15e7dbc0d6f2974d15db20090760ce01c554",
+   "size_docker_inspect": 555875812,
+   "docker_save_bytes": 268859392
+  }
+ }
+}

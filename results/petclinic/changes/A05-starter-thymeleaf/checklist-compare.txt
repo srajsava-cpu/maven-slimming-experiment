@@ -1,0 +1,114 @@
+== h2
+57 baseline items, 57 candidate items, 36 differences
+  DIFF home [status]: baseline=200 candidate=404
+  DIFF home [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Welcome; rows=0; Welcome=y,pets.png=y' candidate='title=None; h2=None; rows=0; Welcome=n,pets.png=n'
+  DIFF home-de [status]: baseline=200 candidate=404
+  DIFF home-de [signature]: baseline='Willkommen=y' candidate='Willkommen=n'
+  DIFF home-es [status]: baseline=200 candidate=404
+  DIFF home-es [signature]: baseline='Bienvenido=y' candidate='Bienvenido=n'
+  DIFF find [status]: baseline=200 candidate=404
+  DIFF find [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0' candidate='title=None; h2=None; rows=0'
+  DIFF list-all [status]: baseline=200 candidate=400
+  DIFF list-all [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-p2 [status]: baseline=200 candidate=400
+  DIFF list-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-davis [status]: baseline=200 candidate=400
+  DIFF list-davis [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=2' candidate='title=None; h2=None; rows=0'
+  DIFF search-none [status]: baseline=200 candidate=400
+  DIFF search-none [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0; has not been found=y' candidate='title=None; h2=None; rows=0; has not been found=n'
+  DIFF owner1 [status]: baseline=200 candidate=404
+  DIFF owner1 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owner Information; rows=0; George=y,Franklin=y,Leo=y' candidate='title=None; h2=None; rows=0; George=n,Franklin=n,Leo=n'
+  DIFF owner-missing [signature]: baseline='title=PetClinic :: a Spring Framework demonstration' candidate='title=None'
+  DIFF owner-edit-form [status]: baseline=200 candidate=404
+  DIFF owner-edit-form [signature]: baseline='George=y,Update Owner=y' candidate='George=n,Update Owner=n'
+  DIFF pet-new-form [status]: baseline=200 candidate=404
+  DIFF pet-new-form [signature]: baseline='hamster=y,lizard=y,snake=y' candidate='hamster=n,lizard=n,snake=n'
+  DIFF pet-edit-form [status]: baseline=200 candidate=404
+  DIFF pet-edit-form [signature]: baseline='Leo=y,Update Pet=y' candidate='Leo=n,Update Pet=n'
+  DIFF visit-form [status]: baseline=200 candidate=404
+  DIFF visit-form [signature]: baseline='Leo=y,Add Visit=y' candidate='Leo=n,Add Visit=n'
+  DIFF vets-html [status]: baseline=200 candidate=404
+  DIFF vets-html [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF vets-html-p2 [status]: baseline=200 candidate=404
+  DIFF vets-html-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=1' candidate='title=None; h2=None; rows=0'
+  DIFF oups [signature]: baseline='Something happened=y' candidate='Something happened=n'
+  DIFF owner-create-invalid [status]: baseline=200 candidate=404
+  DIFF owner-create-invalid [signature]: baseline='must not be blank=y,Telephone must be a 10-digit number=y' candidate='must not be blank=n,Telephone must be a 10-digit number=n'
+  DIFF owner1-after [status]: baseline=200 candidate=404
+  DIFF owner1-after [signature]: baseline='Rex=y,checkup=y' candidate='Rex=n,checkup=n'
+== mysql
+57 baseline items, 57 candidate items, 36 differences
+  DIFF home [status]: baseline=200 candidate=404
+  DIFF home [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Welcome; rows=0; Welcome=y,pets.png=y' candidate='title=None; h2=None; rows=0; Welcome=n,pets.png=n'
+  DIFF home-de [status]: baseline=200 candidate=404
+  DIFF home-de [signature]: baseline='Willkommen=y' candidate='Willkommen=n'
+  DIFF home-es [status]: baseline=200 candidate=404
+  DIFF home-es [signature]: baseline='Bienvenido=y' candidate='Bienvenido=n'
+  DIFF find [status]: baseline=200 candidate=404
+  DIFF find [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0' candidate='title=None; h2=None; rows=0'
+  DIFF list-all [status]: baseline=200 candidate=400
+  DIFF list-all [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-p2 [status]: baseline=200 candidate=400
+  DIFF list-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-davis [status]: baseline=200 candidate=400
+  DIFF list-davis [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=2' candidate='title=None; h2=None; rows=0'
+  DIFF search-none [status]: baseline=200 candidate=400
+  DIFF search-none [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0; has not been found=y' candidate='title=None; h2=None; rows=0; has not been found=n'
+  DIFF owner1 [status]: baseline=200 candidate=404
+  DIFF owner1 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owner Information; rows=0; George=y,Franklin=y,Leo=y' candidate='title=None; h2=None; rows=0; George=n,Franklin=n,Leo=n'
+  DIFF owner-missing [signature]: baseline='title=PetClinic :: a Spring Framework demonstration' candidate='title=None'
+  DIFF owner-edit-form [status]: baseline=200 candidate=404
+  DIFF owner-edit-form [signature]: baseline='George=y,Update Owner=y' candidate='George=n,Update Owner=n'
+  DIFF pet-new-form [status]: baseline=200 candidate=404
+  DIFF pet-new-form [signature]: baseline='hamster=y,lizard=y,snake=y' candidate='hamster=n,lizard=n,snake=n'
+  DIFF pet-edit-form [status]: baseline=200 candidate=404
+  DIFF pet-edit-form [signature]: baseline='Leo=y,Update Pet=y' candidate='Leo=n,Update Pet=n'
+  DIFF visit-form [status]: baseline=200 candidate=404
+  DIFF visit-form [signature]: baseline='Leo=y,Add Visit=y' candidate='Leo=n,Add Visit=n'
+  DIFF vets-html [status]: baseline=200 candidate=404
+  DIFF vets-html [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF vets-html-p2 [status]: baseline=200 candidate=404
+  DIFF vets-html-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=1' candidate='title=None; h2=None; rows=0'
+  DIFF oups [signature]: baseline='Something happened=y' candidate='Something happened=n'
+  DIFF owner-create-invalid [status]: baseline=200 candidate=404
+  DIFF owner-create-invalid [signature]: baseline='must not be blank=y,Telephone must be a 10-digit number=y' candidate='must not be blank=n,Telephone must be a 10-digit number=n'
+  DIFF owner1-after [status]: baseline=200 candidate=404
+  DIFF owner1-after [signature]: baseline='Rex=y,checkup=y' candidate='Rex=n,checkup=n'
+== postgres
+57 baseline items, 57 candidate items, 36 differences
+  DIFF home [status]: baseline=200 candidate=404
+  DIFF home [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Welcome; rows=0; Welcome=y,pets.png=y' candidate='title=None; h2=None; rows=0; Welcome=n,pets.png=n'
+  DIFF home-de [status]: baseline=200 candidate=404
+  DIFF home-de [signature]: baseline='Willkommen=y' candidate='Willkommen=n'
+  DIFF home-es [status]: baseline=200 candidate=404
+  DIFF home-es [signature]: baseline='Bienvenido=y' candidate='Bienvenido=n'
+  DIFF find [status]: baseline=200 candidate=404
+  DIFF find [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0' candidate='title=None; h2=None; rows=0'
+  DIFF list-all [status]: baseline=200 candidate=400
+  DIFF list-all [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-p2 [status]: baseline=200 candidate=400
+  DIFF list-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF list-davis [status]: baseline=200 candidate=400
+  DIFF list-davis [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=2' candidate='title=None; h2=None; rows=0'
+  DIFF search-none [status]: baseline=200 candidate=400
+  DIFF search-none [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0; has not been found=y' candidate='title=None; h2=None; rows=0; has not been found=n'
+  DIFF owner1 [status]: baseline=200 candidate=404
+  DIFF owner1 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Owner Information; rows=0; George=y,Franklin=y,Leo=y' candidate='title=None; h2=None; rows=0; George=n,Franklin=n,Leo=n'
+  DIFF owner-missing [signature]: baseline='title=PetClinic :: a Spring Framework demonstration' candidate='title=None'
+  DIFF owner-edit-form [status]: baseline=200 candidate=404
+  DIFF owner-edit-form [signature]: baseline='George=y,Update Owner=y' candidate='George=n,Update Owner=n'
+  DIFF pet-new-form [status]: baseline=200 candidate=404
+  DIFF pet-new-form [signature]: baseline='hamster=y,lizard=y,snake=y' candidate='hamster=n,lizard=n,snake=n'
+  DIFF pet-edit-form [status]: baseline=200 candidate=404
+  DIFF pet-edit-form [signature]: baseline='Leo=y,Update Pet=y' candidate='Leo=n,Update Pet=n'
+  DIFF visit-form [status]: baseline=200 candidate=404
+  DIFF visit-form [signature]: baseline='Leo=y,Add Visit=y' candidate='Leo=n,Add Visit=n'
+  DIFF vets-html [status]: baseline=200 candidate=404
+  DIFF vets-html [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=5' candidate='title=None; h2=None; rows=0'
+  DIFF vets-html-p2 [status]: baseline=200 candidate=404
+  DIFF vets-html-p2 [signature]: baseline='title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=1' candidate='title=None; h2=None; rows=0'
+  DIFF oups [signature]: baseline='Something happened=y' candidate='Something happened=n'
+  DIFF owner-create-invalid [status]: baseline=200 candidate=404
+  DIFF owner-create-invalid [signature]: baseline='must not be blank=y,Telephone must be a 10-digit number=y' candidate='must not be blank=n,Telephone must be a 10-digit number=n'
+  DIFF owner1-after [status]: baseline=200 candidate=404
+  DIFF owner1-after [signature]: baseline='Rex=y,checkup=y' candidate='Rex=n,checkup=n'

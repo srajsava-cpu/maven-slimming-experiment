@@ -1,0 +1,24 @@
+== h2
+57 baseline items, 57 candidate items, 6 differences
+  DIFF webjar-fa [status]: baseline=200 candidate=404
+  DIFF webjar-fa [content_type]: baseline='text/css' candidate='text/html'
+  DIFF webjar-fa [signature]: baseline='bytes=31000' candidate='bytes=2780'
+  DIFF webjar-fa-font [status]: baseline=200 candidate=404
+  DIFF webjar-fa-font [content_type]: baseline='font/woff2' candidate='text/html'
+  DIFF webjar-fa-font [signature]: baseline='bytes=77160' candidate='bytes=2780'
+== mysql
+57 baseline items, 57 candidate items, 6 differences
+  DIFF webjar-fa [status]: baseline=200 candidate=404
+  DIFF webjar-fa [content_type]: baseline='text/css' candidate='text/html'
+  DIFF webjar-fa [signature]: baseline='bytes=31000' candidate='bytes=2780'
+  DIFF webjar-fa-font [status]: baseline=200 candidate=404
+  DIFF webjar-fa-font [content_type]: baseline='font/woff2' candidate='text/html'
+  DIFF webjar-fa-font [signature]: baseline='bytes=77160' candidate='bytes=2780'
+== postgres
+57 baseline items, 57 candidate items, 6 differences
+  DIFF webjar-fa [status]: baseline=200 candidate=404
+  DIFF webjar-fa [content_type]: baseline='text/css' candidate='text/html'
+  DIFF webjar-fa [signature]: baseline='bytes=31000' candidate='bytes=2780'
+  DIFF webjar-fa-font [status]: baseline=200 candidate=404
+  DIFF webjar-fa-font [content_type]: baseline='font/woff2' candidate='text/html'
+  DIFF webjar-fa-font [signature]: baseline='bytes=77160' candidate='bytes=2780'

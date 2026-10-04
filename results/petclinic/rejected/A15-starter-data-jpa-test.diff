@@ -1,0 +1,16 @@
+diff --git a/pom.xml b/pom.xml
+index 0b6691f..232da00 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -113,11 +113,6 @@
+     </dependency>
+ 
+ 
+-    <dependency>
+-      <groupId>org.springframework.boot</groupId>
+-      <artifactId>spring-boot-starter-data-jpa-test</artifactId>
+-      <scope>test</scope>
+-    </dependency>
+     <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-restclient</artifactId>

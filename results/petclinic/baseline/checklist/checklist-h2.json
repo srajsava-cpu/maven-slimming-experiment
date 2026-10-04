@@ -1,0 +1,466 @@
+[
+ {
+  "id": "home",
+  "description": "Welcome page",
+  "request": "GET / Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Welcome; rows=0; Welcome=y,pets.png=y"
+ },
+ {
+  "id": "home-de",
+  "description": "i18n: German welcome",
+  "request": "GET /?lang=de Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "Willkommen=y"
+ },
+ {
+  "id": "home-es",
+  "description": "i18n: Spanish welcome",
+  "request": "GET /?lang=es Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "Bienvenido=y"
+ },
+ {
+  "id": "find",
+  "description": "Find owners form",
+  "request": "GET /owners/find Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0"
+ },
+ {
+  "id": "list-all",
+  "description": "Owner list page 1 (all owners)",
+  "request": "GET /owners?lastName= Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5"
+ },
+ {
+  "id": "list-p2",
+  "description": "Owner list page 2",
+  "request": "GET /owners?lastName=&page=2 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=5"
+ },
+ {
+  "id": "list-davis",
+  "description": "Owner search with 2 matches",
+  "request": "GET /owners?lastName=Davis Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Owners; rows=2"
+ },
+ {
+  "id": "search-one",
+  "description": "Owner search with 1 match redirects",
+  "request": "GET /owners?lastName=Franklin Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/1"
+ },
+ {
+  "id": "search-none",
+  "description": "Owner search with no match",
+  "request": "GET /owners?lastName=Nobody Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Find Owners; rows=0; has not been found=y"
+ },
+ {
+  "id": "owner1",
+  "description": "Owner details",
+  "request": "GET /owners/1 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Owner Information; rows=0; George=y,Franklin=y,Leo=y"
+ },
+ {
+  "id": "owner-missing",
+  "description": "Unknown owner id",
+  "request": "GET /owners/9999 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 500,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration"
+ },
+ {
+  "id": "owner-edit-form",
+  "description": "Edit owner form",
+  "request": "GET /owners/1/edit Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "George=y,Update Owner=y"
+ },
+ {
+  "id": "pet-new-form",
+  "description": "New pet form (pet types from DB)",
+  "request": "GET /owners/1/pets/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "hamster=y,lizard=y,snake=y"
+ },
+ {
+  "id": "pet-edit-form",
+  "description": "Edit pet form",
+  "request": "GET /owners/1/pets/1/edit Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "Leo=y,Update Pet=y"
+ },
+ {
+  "id": "visit-form",
+  "description": "New visit form",
+  "request": "GET /owners/1/pets/1/visits/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "Leo=y,Add Visit=y"
+ },
+ {
+  "id": "vets-html",
+  "description": "Vet list HTML page 1",
+  "request": "GET /vets.html Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=5"
+ },
+ {
+  "id": "vets-html-p2",
+  "description": "Vet list HTML page 2",
+  "request": "GET /vets.html?page=2 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "title=PetClinic :: a Spring Framework demonstration; h2=Veterinarians; rows=1"
+ },
+ {
+  "id": "vets-json",
+  "description": "Vets resource as JSON",
+  "request": "GET /vets Accept: application/json",
+  "status": 200,
+  "content_type": "application/json",
+  "signature": "keys=['vetList']; vets=6; vet0keys=['firstName', 'id', 'lastName', 'new', 'nrOfSpecialties', 'specialties']; specialties=5"
+ },
+ {
+  "id": "vets-xml",
+  "description": "Vets resource as XML",
+  "request": "GET /vets Accept: application/xml",
+  "status": 200,
+  "content_type": "application/xml",
+  "signature": "root=vets; vetList=6; firstName=6"
+ },
+ {
+  "id": "vets-default",
+  "description": "Vets resource, no Accept header preference",
+  "request": "GET /vets Accept: */*",
+  "status": 200,
+  "content_type": "application/json",
+  "signature": "bytes=797"
+ },
+ {
+  "id": "oups",
+  "description": "Deliberate exception page",
+  "request": "GET /oups Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 500,
+  "content_type": "text/html",
+  "signature": "Something happened=y"
+ },
+ {
+  "id": "notfound",
+  "description": "Unknown URL",
+  "request": "GET /does-not-exist Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 404,
+  "content_type": "text/html",
+  "signature": ""
+ },
+ {
+  "id": "css",
+  "description": "Compiled stylesheet",
+  "request": "GET /resources/css/petclinic.css Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/css",
+  "signature": "bytes=278931"
+ },
+ {
+  "id": "img",
+  "description": "Image",
+  "request": "GET /resources/images/pets.png Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "image/png",
+  "signature": "bytes=67721"
+ },
+ {
+  "id": "font",
+  "description": "Web font",
+  "request": "GET /resources/fonts/montserrat-webfont.woff Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "font/woff",
+  "signature": "bytes=24240"
+ },
+ {
+  "id": "favicon",
+  "description": "Favicon",
+  "request": "GET /resources/images/favicon.png Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "image/png",
+  "signature": "bytes=528"
+ },
+ {
+  "id": "webjar-bs",
+  "description": "Bootstrap JS via webjars locator (versionless URL)",
+  "request": "GET /webjars/bootstrap/dist/js/bootstrap.bundle.min.js Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/javascript",
+  "signature": "bytes=80496"
+ },
+ {
+  "id": "webjar-fa",
+  "description": "Font Awesome CSS via webjars locator",
+  "request": "GET /webjars/font-awesome/css/font-awesome.min.css Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/css",
+  "signature": "bytes=31000"
+ },
+ {
+  "id": "webjar-fa-font",
+  "description": "Font Awesome font via webjars locator",
+  "request": "GET /webjars/font-awesome/fonts/fontawesome-webfont.woff2 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "font/woff2",
+  "signature": "bytes=77160"
+ },
+ {
+  "id": "owner-create",
+  "description": "Create owner (write)",
+  "request": "POST /owners/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/11"
+ },
+ {
+  "id": "owner-created",
+  "description": "Read back created owner",
+  "request": "GET /owners?lastName=Lovelace Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/11"
+ },
+ {
+  "id": "owner-create-invalid",
+  "description": "Create owner with validation errors",
+  "request": "POST /owners/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "must not be blank=y,Telephone must be a 10-digit number=y"
+ },
+ {
+  "id": "owner-update",
+  "description": "Update owner (write)",
+  "request": "POST /owners/1/edit Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/1"
+ },
+ {
+  "id": "pet-create",
+  "description": "Add pet (write)",
+  "request": "POST /owners/1/pets/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/1"
+ },
+ {
+  "id": "visit-create",
+  "description": "Add visit (write)",
+  "request": "POST /owners/1/pets/1/visits/new Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 302,
+  "content_type": "",
+  "signature": "location=/owners/1"
+ },
+ {
+  "id": "owner1-after",
+  "description": "Owner details after writes",
+  "request": "GET /owners/1 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "text/html",
+  "signature": "Rex=y,checkup=y"
+ },
+ {
+  "id": "act-root",
+  "description": "Actuator discovery",
+  "request": "GET /actuator Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+ },
+ {
+  "id": "health",
+  "description": "Health",
+  "request": "GET /actuator/health Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "status=UP; components=[]"
+ },
+ {
+  "id": "health-db",
+  "description": "Health: db component (404 = components not exposed)",
+  "request": "GET /actuator/health/db Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 404,
+  "content_type": "",
+  "signature": ""
+ },
+ {
+  "id": "info",
+  "description": "Info (build + git)",
+  "request": "GET /actuator/info Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "keys=['build', 'git']; build.keys=['artifact', 'encoding', 'group', 'java', 'name', 'time', 'version']"
+ },
+ {
+  "id": "metrics",
+  "description": "Metrics names",
+  "request": "GET /actuator/metrics Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "count=67; cache.*=[]"
+ },
+ {
+  "id": "metric-jvm",
+  "description": "Metric jvm.memory.used",
+  "request": "GET /actuator/metrics/jvm.memory.used Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "name=jvm.memory.used"
+ },
+ {
+  "id": "caches",
+  "description": "Cache managers and cache provider class",
+  "request": "GET /actuator/caches Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache"
+ },
+ {
+  "id": "sbom",
+  "description": "SBOM ids",
+  "request": "GET /actuator/sbom Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": "ids=['application']"
+ },
+ {
+  "id": "sbom-app",
+  "description": "Application SBOM",
+  "request": "GET /actuator/sbom/application Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.cyclonedx+json",
+  "signature": "bomFormat=CycloneDX"
+ },
+ {
+  "id": "prometheus",
+  "description": "Prometheus scrape endpoint",
+  "request": "GET /actuator/prometheus Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 404,
+  "content_type": "text/html",
+  "signature": ""
+ },
+ {
+  "id": "act-beans",
+  "description": "Actuator beans",
+  "request": "GET /actuator/beans Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-conditions",
+  "description": "Actuator conditions",
+  "request": "GET /actuator/conditions Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-configprops",
+  "description": "Actuator configprops",
+  "request": "GET /actuator/configprops Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-env",
+  "description": "Actuator env",
+  "request": "GET /actuator/env Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-loggers",
+  "description": "Actuator loggers",
+  "request": "GET /actuator/loggers Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-mappings",
+  "description": "Actuator mappings",
+  "request": "GET /actuator/mappings Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-scheduledtasks",
+  "description": "Actuator scheduledtasks",
+  "request": "GET /actuator/scheduledtasks Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-threaddump",
+  "description": "Actuator threaddump",
+  "request": "GET /actuator/threaddump Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 200,
+  "content_type": "application/vnd.spring-boot.actuator.v3+json",
+  "signature": ""
+ },
+ {
+  "id": "act-heapdump",
+  "description": "Actuator heapdump",
+  "request": "GET /actuator/heapdump Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "status": 404,
+  "content_type": "text/html",
+  "signature": ""
+ },
+ {
+  "id": "cache-hit",
+  "description": "Repeated GET /vets served from the 'vets' cache (cache interceptor trace log)",
+  "request": "GET /vets (json) repeated",
+  "status": null,
+  "content_type": null,
+  "signature": "findAll() cache entries created=1; findAll() served from cache=yes"
+ },
+ {
+  "id": "log-routing",
+  "description": "All log output routed through Logback (no raw java.util.logging lines)",
+  "request": "app log",
+  "status": null,
+  "content_type": null,
+  "signature": "jul_simpleformatter_lines=0"
+ },
+ {
+  "id": "db-row",
+  "description": "Created owner row present in the external database",
+  "request": "SQL count",
+  "status": null,
+  "content_type": null,
+  "signature": "rows=n/a (in-memory)"
+ }
+]

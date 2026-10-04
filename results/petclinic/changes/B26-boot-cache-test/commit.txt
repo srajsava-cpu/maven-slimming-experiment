@@ -1,0 +1,1 @@
+d4ca64ccd8e0ac21a3760f6be878eb4a295cf665 B24-boot-restclient-test: exclude org.springframework.boot:spring-boot-restclient-test everywhere

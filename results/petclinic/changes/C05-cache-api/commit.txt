@@ -1,0 +1,1 @@
+fe3f337bbb67b140396d0747b1becf433e07288c C05-cache-api: remove javax.cache:cache-api

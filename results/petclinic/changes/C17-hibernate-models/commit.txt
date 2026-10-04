@@ -1,0 +1,1 @@
+34ecb4f430e36f73fb1cec70af0a59b98cee1f68 C17-hibernate-models: exclude org.hibernate.models:hibernate-models everywhere

@@ -1,0 +1,16 @@
+diff --git a/pom.xml b/pom.xml
+index a125bfb..3ef33a6 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -138,11 +138,6 @@
+       <artifactId>spring-boot-docker-compose</artifactId>
+       <scope>test</scope>
+     </dependency>
+-    <dependency>
+-      <groupId>org.springframework.boot</groupId>
+-      <artifactId>spring-boot-starter-cache-test</artifactId>
+-      <scope>test</scope>
+-    </dependency>
+     <dependency>
+       <groupId>org.testcontainers</groupId>
+       <artifactId>testcontainers-junit-jupiter</artifactId>

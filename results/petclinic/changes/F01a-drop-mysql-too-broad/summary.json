@@ -1,0 +1,88 @@
+{
+ "verify_exit": 1,
+ "tests_run": 0,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {
+  "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+   1,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+   7,
+   null
+  ],
+  "org.springframework.samples.petclinic.vet.VetTests": [
+   1,
+   null
+  ],
+  "org.springframework.samples.petclinic.system.CrashControllerTests": [
+   1,
+   null
+  ],
+  "org.springframework.samples.petclinic.vet.VetControllerTests": [
+   3,
+   null
+  ],
+  "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+   12,
+   null
+  ],
+  "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+   5,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.OwnerTests": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+   18,
+   null
+  ],
+  "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+   3,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.PetControllerTests": [
+   14,
+   null
+  ],
+  "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.model.ValidatorTests": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+   2,
+   null
+  ],
+  "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+   1,
+   null
+  ],
+  "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+   3,
+   null
+  ]
+ },
+ "same_tests_as_baseline": false,
+ "resolved_total": 133,
+ "checklist": "skipped",
+ "tests_pass": false,
+ "verdict": "REJECT"
+}

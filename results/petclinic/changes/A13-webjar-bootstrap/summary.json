@@ -1,0 +1,22 @@
+{
+ "verify_exit": 0,
+ "tests_run": 81,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {},
+ "same_tests_as_baseline": true,
+ "artifact_bytes": 63988742,
+ "lib_count": 92,
+ "artifact_delta_vs_baseline": -1842583,
+ "libs_removed_vs_baseline": [
+  "bootstrap-5.3.8.jar"
+ ],
+ "libs_added_vs_baseline": [],
+ "resolved_total": 169,
+ "checklist": "FAIL",
+ "tests_pass": true,
+ "verdict": "REJECT"
+}

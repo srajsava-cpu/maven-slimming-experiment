@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index 63b373c..99f3d1d 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -80,6 +80,12 @@
+     <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-webmvc</artifactId>
++      <exclusions>
++        <exclusion>
++          <groupId>org.springframework.boot</groupId>
++          <artifactId>spring-boot-servlet</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+ 
+     <dependency>

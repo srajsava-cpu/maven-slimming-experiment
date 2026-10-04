@@ -1,0 +1,1 @@
+ac8d271b91141cb5590b57066e7ad3aa76b76bfd C16-jboss-logging: exclude org.jboss.logging:jboss-logging everywhere

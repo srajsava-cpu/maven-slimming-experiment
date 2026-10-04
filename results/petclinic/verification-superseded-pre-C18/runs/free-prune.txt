@@ -1,0 +1,8 @@
+Deleted Containers:
+aa6d8125431142b10605798bc73f1e32aadf64e1ba0ca9833c5b97bbf149e09f
+
+Total reclaimed space: 16.38kB
+Deleted Volumes:
+fbbcdf91e4935ffe6cc2a015567cecf2244457fb19452e96349230130e250452
+
+Total reclaimed space: 49.19MB

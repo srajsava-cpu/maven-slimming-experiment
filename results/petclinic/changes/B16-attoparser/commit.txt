@@ -1,0 +1,1 @@
+85da57f762f3ff06cfe2710d3c8f107783d97635 B16-attoparser: exclude org.attoparser:attoparser everywhere

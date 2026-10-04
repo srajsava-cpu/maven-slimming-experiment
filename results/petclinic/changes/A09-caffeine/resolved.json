@@ -1,0 +1,22 @@
+{
+  "by_scope": {
+    "compile": {
+      "direct": 8,
+      "transitive": 80,
+      "total": 88
+    },
+    "runtime": {
+      "direct": 6,
+      "transitive": 9,
+      "total": 15
+    },
+    "test": {
+      "direct": 12,
+      "transitive": 53,
+      "total": 65
+    }
+  },
+  "direct_total": 26,
+  "transitive_total": 142,
+  "total": 168
+}

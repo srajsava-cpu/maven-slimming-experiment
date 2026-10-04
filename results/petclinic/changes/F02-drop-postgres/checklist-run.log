@@ -1,0 +1,7 @@
+56 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/F02-drop-postgres/checklist/checklist-h2.json
+56 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/F02-drop-postgres/checklist/checklist-mysql.json
+56 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/F02-drop-postgres/checklist/checklist-postgres.json
+ERROR:  relation "owners" does not exist
+LINE 1: select count(*) from owners where last_name='Lovelace'
+                             ^
+done

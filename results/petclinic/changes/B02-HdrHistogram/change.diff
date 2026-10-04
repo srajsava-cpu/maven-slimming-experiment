@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index 955e971..826a3fa 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -47,6 +47,10 @@
+           <groupId>org.yaml</groupId>
+           <artifactId>snakeyaml</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.hdrhistogram</groupId>
++          <artifactId>HdrHistogram</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

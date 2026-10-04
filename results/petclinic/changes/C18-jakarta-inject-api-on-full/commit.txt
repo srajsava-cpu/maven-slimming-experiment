@@ -1,0 +1,1 @@
+253cfcf00e4574a6ec414eedf11e1e038c111040 C18-jakarta-inject-api-on-full: apply C18 (exclude jakarta.inject-api) to the full branch

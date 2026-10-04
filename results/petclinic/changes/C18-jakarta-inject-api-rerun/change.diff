@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index b4513c5..824f7c2 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -77,6 +77,10 @@
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-aspects</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>jakarta.inject</groupId>
++          <artifactId>jakarta.inject-api</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

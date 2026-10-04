@@ -1,0 +1,23 @@
+{
+ "verify_exit": 0,
+ "tests_run": 81,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {},
+ "same_tests_as_baseline": true,
+ "artifact_bytes": 65311731,
+ "lib_count": 91,
+ "artifact_delta_vs_baseline": -519594,
+ "libs_removed_vs_baseline": [
+  "HdrHistogram-2.2.2.jar",
+  "snakeyaml-2.6.jar"
+ ],
+ "libs_added_vs_baseline": [],
+ "resolved_total": 160,
+ "checklist": "pass",
+ "tests_pass": true,
+ "verdict": "KEEP-ELIGIBLE"
+}

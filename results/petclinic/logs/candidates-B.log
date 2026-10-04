@@ -1,0 +1,219 @@
+excluded org.yaml:snakeyaml after 1 exclusion(s)
+B01-snakeyaml KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65489879, 'artifact_delta_vs_baseline': -341446, 'lib_count': 92, 'resolved_total': 161, 'checklist': 'pass', 'libs_removed_vs_baseline': ['snakeyaml-2.6.jar']}
+excluded org.hdrhistogram:HdrHistogram after 1 exclusion(s)
+B02-HdrHistogram KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65311731, 'artifact_delta_vs_baseline': -519594, 'lib_count': 91, 'resolved_total': 160, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'snakeyaml-2.6.jar']}
+excluded org.slf4j:jul-to-slf4j after 1 exclusion(s)
+B03-jul-to-slf4j KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65304690, 'artifact_delta_vs_baseline': -526635, 'lib_count': 90, 'resolved_total': 159, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'snakeyaml-2.6.jar']}
+excluded io.micrometer:micrometer-jakarta9 after 1 exclusion(s)
+B04-micrometer-jakarta9 KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249313, 'artifact_delta_vs_baseline': -582012, 'lib_count': 89, 'resolved_total': 158, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded org.springframework.boot:spring-boot-actuator after 1 exclusion(s)
+B05-boot-actuator REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 10, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.580 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.173 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.247 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 22.18 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.137 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Errors: 
+[ERROR]   MySqlIntegrationTests.findAll » IllegalState Failed to load ApplicationContext for [WebMergedContextConfiguration@73d146a testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e05586b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1280682, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5f59ea8c, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@54e43bfe, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@41d16cc3, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@e521c737, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+[ERROR]   MySqlIntegrationTests.ownerDetails » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@73d146a testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e05586b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1280682, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5f59ea8c, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@54e43bfe, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@41d16cc3, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@e521c737, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+excluded org.springframework.boot:spring-boot-actuator-autoconfigure after 1 exclusion(s)
+B06-boot-actuator-autoconfigure REJECTED (reverted)
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 64749753, 'artifact_delta_vs_baseline': -1081572, 'lib_count': 87, 'resolved_total': 156, 'checklist': 'FAIL', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar', 'spring-boot-actuator-4.1.0.jar', 'spring-boot-actuator-autoconfigure-4.1.0.jar']}
+  DIFF act-root [status]: baseline=200 candidate=404
+  DIFF act-root [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF info [status]: baseline=200 candidate=404
+  DIFF info [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF info [signature]: baseline="keys=['build', 'git']; build.keys=['artifact', 'encoding', 'group', 'java', 'name', 'time', 'version']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+excluded org.springframework.boot:spring-boot-micrometer-metrics after 1 exclusion(s)
+B07-boot-micrometer-metrics REJECTED (reverted)
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 64055025, 'artifact_delta_vs_baseline': -1776300, 'lib_count': 86, 'resolved_total': 155, 'checklist': 'FAIL', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-core-1.17.0.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar', 'spring-boot-micrometer-metrics-4.1.0.jar', 'spring-boot-micrometer-observation-4.1.0.jar']}
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+excluded org.springframework.boot:spring-boot-micrometer-observation after 1 exclusion(s)
+B08-boot-micrometer-observation REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 10, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.174 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.325 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.989 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 23.41 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.203 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Errors: 
+[ERROR]   MySqlIntegrationTests.findAll » IllegalState Failed to load ApplicationContext for [WebMergedContextConfiguration@84e9268 testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e05586b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1280682, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5f59ea8c, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@54e43bfe, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@41d16cc3, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@fb4b6432, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+[ERROR]   MySqlIntegrationTests.ownerDetails » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@84e9268 testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e05586b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1280682, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5f59ea8c, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@54e43bfe, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@41d16cc3, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@fb4b6432, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+excluded org.springframework.boot:spring-boot-health after 1 exclusion(s)
+B09-boot-health REJECTED (reverted)
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65093441, 'artifact_delta_vs_baseline': -737884, 'lib_count': 88, 'resolved_total': 157, 'checklist': 'FAIL', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar', 'spring-boot-health-4.1.0.jar']}
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+excluded org.springframework.boot:spring-boot-web-server after 2 exclusion(s)
+B10-boot-web-server REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 10, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.407 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.575 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.391 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 45.72 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.733 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Errors: 
+[ERROR]   MySqlIntegrationTests.findAll » BeanCreation Error creating bean with name 'org.springframework.samples.petclinic.MySqlIntegrationTests': Injection of autowired dependencies failed
+[ERROR]   MySqlIntegrationTests.ownerDetails » BeanCreation Error creating bean with name 'org.springframework.samples.petclinic.MySqlIntegrationTests': Injection of autowired dependencies failed
+excluded org.springframework.boot:spring-boot-tomcat after 1 exclusion(s)
+B11-boot-tomcat REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 10, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.607 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.392 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.336 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 21.39 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.289 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Errors: 
+[ERROR]   MySqlIntegrationTests.findAll » IllegalState Failed to load ApplicationContext for [WebMergedContextConfiguration@5a17588 testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a8ffd75, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@f1266c6, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@270d43a7, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@86d6bf7, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@54e43bfe, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@211e30d0, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+[ERROR]   MySqlIntegrationTests.ownerDetails » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@5a17588 testClass = org.springframework.samples.petclinic.MySqlIntegrationTests, locations = [], classes = [org.springframework.samples.petclinic.PetClinicApplication], contextInitializerClasses = [], activeProfiles = ["mysql"], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a8ffd75, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@f1266c6, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@270d43a7, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@86d6bf7, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@54e43bfe, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@211e30d0, org.springframework.boot.test.context.SpringBootTestAnnotation@19b73710], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+excluded org.springframework.boot:spring-boot-http-converter after 3 exclusion(s)
+B12-boot-http-converter REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 51, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 2.725 s <<< FAILURE! -- in org.springframework.samples.petclinic.vet.VetControllerTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.681 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.249 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.141 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.WelcomeControllerTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.905 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 22.45 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.181 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[ERROR] Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.306 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+excluded org.springframework.boot:spring-boot-servlet after 1 exclusion(s)
+B13-boot-servlet REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 0, 'errors': 51, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 2.514 s <<< FAILURE! -- in org.springframework.samples.petclinic.vet.VetControllerTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.787 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.362 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.113 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.WelcomeControllerTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.067 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 22.69 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.188 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[ERROR] Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.186 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+excluded org.springframework.boot:spring-boot-thymeleaf after 1 exclusion(s)
+B14-boot-thymeleaf REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 2, 'errors': 4, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 153, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.377 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.989 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.360 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.16 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.113 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Failures: 
+[ERROR]   PetClinicConcurrencyTests.testDuplicatePetNameRaceConditionIsBlocked:124 
+[ERROR]   CrashControllerIntegrationTests.triggerExceptionHtml:87 
+excluded org.thymeleaf:thymeleaf-spring6 after 1 exclusion(s)
+B15-thymeleaf-spring6 REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 2, 'errors': 4, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 154, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.351 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.793 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.725 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 53.46 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.126 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[ERROR] Failures: 
+[ERROR]   PetClinicConcurrencyTests.testDuplicatePetNameRaceConditionIsBlocked:124 
+[ERROR]   CrashControllerIntegrationTests.triggerExceptionHtml:87 
+excluded org.attoparser:attoparser after 1 exclusion(s)
+B16-attoparser REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 2, 'errors': 32, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.318 s <<< FAILURE! -- in org.springframework.samples.petclinic.vet.VetControllerTests
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.431 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.914 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.292 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.WelcomeControllerTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.665 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.27 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 18, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.940 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[ERROR] Tests run: 8, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.260 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+excluded org.unbescape:unbescape after 1 exclusion(s)
+B17-unbescape REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 81, 'failures': 2, 'errors': 32, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 157, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.729 s <<< FAILURE! -- in org.springframework.samples.petclinic.vet.VetControllerTests
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.531 s <<< FAILURE! -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.841 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.263 s <<< FAILURE! -- in org.springframework.samples.petclinic.system.WelcomeControllerTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.367 s <<< FAILURE! -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 54.78 s <<< FAILURE! -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[ERROR] Tests run: 18, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.795 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[ERROR] Tests run: 8, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.168 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+excluded org.springframework.boot:spring-boot-data-commons after 1 exclusion(s)
+B18-boot-data-commons REJECTED (reverted)
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65218374, 'artifact_delta_vs_baseline': -612951, 'lib_count': 88, 'resolved_total': 157, 'checklist': 'FAIL', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar', 'spring-boot-data-commons-4.1.0.jar']}
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'
+excluded org.springframework.boot:spring-boot-validation after 1 exclusion(s)
+B19-boot-validation REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 0, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': False, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 154, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] COMPILATION ERROR : 
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[20,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/Person.java:[20,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/Person.java:[21,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/owner/Owner.java:[34,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/owner/Owner.java:[35,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/owner/Owner.java:[36,38] package jakarta.validation.constraints does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/owner/Visit.java:[26,38] package jakarta.validation.constraints does not exist
+excluded org.springframework.boot:spring-boot-data-jpa after 2 exclusion(s)
+B20-boot-data-jpa REJECTED (reverted)
+{'verify_exit': 1, 'tests_run': 0, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': False, 'artifact_bytes': None, 'artifact_delta_vs_baseline': None, 'lib_count': None, 'resolved_total': 141, 'checklist': 'skipped', 'libs_removed_vs_baseline': None}
+[ERROR] COMPILATION ERROR : 
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[20,27] package jakarta.persistence does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[21,27] package jakarta.persistence does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[22,27] package jakarta.persistence does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[23,27] package jakarta.persistence does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[32,2] cannot find symbol
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[18,27] package jakarta.persistence does not exist
+[ERROR] /workspaces/maven-slimming-experiment/work/petclinic/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[19,27] package jakarta.persistence does not exist
+excluded commons-codec:commons-codec after 1 exclusion(s)
+B21-commons-codec-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249325, 'artifact_delta_vs_baseline': -582000, 'lib_count': 89, 'resolved_total': 157, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded org.awaitility:awaitility after 1 exclusion(s)
+B22-awaitility-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249341, 'artifact_delta_vs_baseline': -581984, 'lib_count': 89, 'resolved_total': 156, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded io.micrometer:micrometer-observation-test after 0 exclusion(s)
+On branch slim
+nothing to commit, working tree clean
+B23-micrometer-observation-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249341, 'artifact_delta_vs_baseline': -581984, 'lib_count': 89, 'resolved_total': 156, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded org.springframework.boot:spring-boot-restclient-test after 1 exclusion(s)
+B24-boot-restclient-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249367, 'artifact_delta_vs_baseline': -581958, 'lib_count': 89, 'resolved_total': 155, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded org.springframework.boot:spring-boot-micrometer-metrics-test after 0 exclusion(s)
+On branch slim
+nothing to commit, working tree clean
+B25-boot-micrometer-metrics-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249367, 'artifact_delta_vs_baseline': -581958, 'lib_count': 89, 'resolved_total': 155, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}
+excluded org.springframework.boot:spring-boot-cache-test after 0 exclusion(s)
+On branch slim
+nothing to commit, working tree clean
+B26-boot-cache-test KEPT
+{'verify_exit': 0, 'tests_run': 81, 'failures': 0, 'errors': 0, 'skipped': 0, 'same_tests_as_baseline': True, 'artifact_bytes': 65249367, 'artifact_delta_vs_baseline': -581958, 'lib_count': 89, 'resolved_total': 155, 'checklist': 'pass', 'libs_removed_vs_baseline': ['HdrHistogram-2.2.2.jar', 'jul-to-slf4j-2.0.18.jar', 'micrometer-jakarta9-1.17.0.jar', 'snakeyaml-2.6.jar']}

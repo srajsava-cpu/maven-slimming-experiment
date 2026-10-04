@@ -1,0 +1,1 @@
+d978c208a966f65e11923b4e807615d5b2a568e2 B18-boot-data-commons: exclude org.springframework.boot:spring-boot-data-commons everywhere

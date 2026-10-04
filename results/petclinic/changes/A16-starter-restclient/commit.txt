@@ -1,0 +1,1 @@
+25bcb5fe7d8db9d01fc0d8470a1c41d541738417 A16-starter-restclient: remove org.springframework.boot:spring-boot-starter-restclient

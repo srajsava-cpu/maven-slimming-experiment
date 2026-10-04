@@ -1,0 +1,1 @@
+8f4b466c3e270ab040bc87c57728110b3f9c5c04 B15-thymeleaf-spring6: exclude org.thymeleaf:thymeleaf-spring6 everywhere

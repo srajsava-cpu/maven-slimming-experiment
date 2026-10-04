@@ -1,0 +1,1 @@
+e49c3242bd0b6307cfa6e093eec40942f661a083 A13-webjar-bootstrap: remove org.webjars.npm:bootstrap

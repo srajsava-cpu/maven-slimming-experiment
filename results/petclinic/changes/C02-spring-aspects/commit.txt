@@ -1,0 +1,1 @@
+31c8a604e987b94451a1d94bd1d5c15e5694b4a1 C02-spring-aspects: exclude org.springframework:spring-aspects everywhere

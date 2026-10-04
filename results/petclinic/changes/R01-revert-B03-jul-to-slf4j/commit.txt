@@ -1,0 +1,1 @@
+4b90819705f40832b2c1e10dde8e034927c4e018 R01-revert-B03-jul-to-slf4j: revert B03: jul-to-slf4j exclusion changed log routing (found after the fact; checklist extended with log-routing item)

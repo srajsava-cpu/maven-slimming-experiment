@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index 826a3fa..587ea30 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -51,6 +51,10 @@
+           <groupId>org.hdrhistogram</groupId>
+           <artifactId>HdrHistogram</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.slf4j</groupId>
++          <artifactId>jul-to-slf4j</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

@@ -1,0 +1,21 @@
+== h2
+57 baseline items, 57 candidate items, 5 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+== mysql
+57 baseline items, 57 candidate items, 5 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+== postgres
+57 baseline items, 57 candidate items, 5 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
