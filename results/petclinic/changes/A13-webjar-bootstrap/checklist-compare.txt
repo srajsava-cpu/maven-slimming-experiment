@@ -1,0 +1,15 @@
+== h2
+57 baseline items, 57 candidate items, 3 differences
+  DIFF webjar-bs [status]: baseline=200 candidate=404
+  DIFF webjar-bs [content_type]: baseline='text/javascript' candidate='text/html'
+  DIFF webjar-bs [signature]: baseline='bytes=80496' candidate='bytes=2780'
+== mysql
+57 baseline items, 57 candidate items, 3 differences
+  DIFF webjar-bs [status]: baseline=200 candidate=404
+  DIFF webjar-bs [content_type]: baseline='text/javascript' candidate='text/html'
+  DIFF webjar-bs [signature]: baseline='bytes=80496' candidate='bytes=2780'
+== postgres
+57 baseline items, 57 candidate items, 3 differences
+  DIFF webjar-bs [status]: baseline=200 candidate=404
+  DIFF webjar-bs [content_type]: baseline='text/javascript' candidate='text/html'
+  DIFF webjar-bs [signature]: baseline='bytes=80496' candidate='bytes=2780'

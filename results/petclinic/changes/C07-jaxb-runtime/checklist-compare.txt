@@ -1,0 +1,15 @@
+== h2
+57 baseline items, 57 candidate items, 3 differences
+  DIFF vets-xml [status]: baseline=200 candidate=500
+  DIFF vets-xml [content_type]: baseline='application/xml' candidate=''
+  DIFF vets-xml [signature]: baseline='root=vets; vetList=6; firstName=6' candidate='root=None; vetList=0; firstName=0'
+== mysql
+57 baseline items, 57 candidate items, 3 differences
+  DIFF vets-xml [status]: baseline=200 candidate=500
+  DIFF vets-xml [content_type]: baseline='application/xml' candidate=''
+  DIFF vets-xml [signature]: baseline='root=vets; vetList=6; firstName=6' candidate='root=None; vetList=0; firstName=0'
+== postgres
+57 baseline items, 57 candidate items, 3 differences
+  DIFF vets-xml [status]: baseline=200 candidate=500
+  DIFF vets-xml [content_type]: baseline='application/xml' candidate=''
+  DIFF vets-xml [signature]: baseline='root=vets; vetList=6; firstName=6' candidate='root=None; vetList=0; firstName=0'

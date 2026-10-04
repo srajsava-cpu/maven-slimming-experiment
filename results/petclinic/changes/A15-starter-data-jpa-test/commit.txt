@@ -1,0 +1,1 @@
+72b64831af0ed059a38dd6afd43a484f766c0ca0 A15-starter-data-jpa-test: remove org.springframework.boot:spring-boot-starter-data-jpa-test

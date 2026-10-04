@@ -1,0 +1,27 @@
+== h2
+57 baseline items, 57 candidate items, 7 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+== mysql
+57 baseline items, 57 candidate items, 7 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+== postgres
+57 baseline items, 57 candidate items, 7 differences
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']"
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'

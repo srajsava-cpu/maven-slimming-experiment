@@ -1,0 +1,9 @@
+== h2
+57 baseline items, 57 candidate items, 1 differences
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'
+== mysql
+57 baseline items, 57 candidate items, 1 differences
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'
+== postgres
+57 baseline items, 57 candidate items, 1 differences
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='count=66; cache.*=[]'

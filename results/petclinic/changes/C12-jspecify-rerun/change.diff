@@ -1,0 +1,50 @@
+diff --git a/pom.xml b/pom.xml
+index 35aaf8a..3668273 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -63,6 +63,10 @@
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-to-slf4j</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.jspecify</groupId>
++          <artifactId>jspecify</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>
+@@ -125,6 +129,10 @@
+           <groupId>com.google.errorprone</groupId>
+           <artifactId>error_prone_annotations</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.jspecify</groupId>
++          <artifactId>jspecify</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>
+@@ -142,6 +150,12 @@
+       <artifactId>webjars-locator-lite</artifactId>
+       <version>${webjars-locator.version}</version>
+       <scope>runtime</scope>
++      <exclusions>
++        <exclusion>
++          <groupId>org.jspecify</groupId>
++          <artifactId>jspecify</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+     <dependency>
+       <groupId>org.webjars.npm</groupId>
+@@ -166,6 +180,10 @@
+           <groupId>org.awaitility</groupId>
+           <artifactId>awaitility</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.jspecify</groupId>
++          <artifactId>jspecify</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

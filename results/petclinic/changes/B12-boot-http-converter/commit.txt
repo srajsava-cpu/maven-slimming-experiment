@@ -1,0 +1,1 @@
+c5aa7682e7e8c0b6027974275cae29def2a2a04d B12-boot-http-converter: exclude org.springframework.boot:spring-boot-http-converter everywhere

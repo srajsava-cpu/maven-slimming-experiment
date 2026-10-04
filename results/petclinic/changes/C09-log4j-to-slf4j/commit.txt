@@ -1,0 +1,1 @@
+8fe2caf5c38cdb7009d2cd5152e7ff08837e99ec C09-log4j-to-slf4j: exclude org.apache.logging.log4j:log4j-to-slf4j everywhere

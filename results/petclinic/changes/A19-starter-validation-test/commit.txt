@@ -1,0 +1,1 @@
+59b7757c7c7336eb15c895dc15a1dcf98fce83d2 A19-starter-validation-test: remove org.springframework.boot:spring-boot-starter-validation-test

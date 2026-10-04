@@ -1,0 +1,1 @@
+cff90f1d8899f363794b7923ae5527bb27e87bfb B20-boot-data-jpa: exclude org.springframework.boot:spring-boot-data-jpa everywhere

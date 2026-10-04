@@ -1,0 +1,6 @@
+== h2
+57 baseline items, 57 candidate items, 0 differences
+== mysql
+57 baseline items, 57 candidate items, 0 differences
+== postgres
+57 baseline items, 57 candidate items, 0 differences

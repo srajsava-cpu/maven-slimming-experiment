@@ -1,0 +1,23 @@
+{
+  "by_severity": {
+    "CRITICAL": 3,
+    "HIGH": 6,
+    "MEDIUM": 4
+  },
+  "total": 13,
+  "findings": [
+    "CVE-2026-19032 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-54291 org.postgresql:postgresql@42.7.11",
+    "CVE-2026-59889 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-65182 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+    "CVE-2026-65905 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+    "CVE-2026-68497 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-68525 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+    "CVE-2026-77310 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-83557 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-89407 tools.jackson.core:jackson-core@3.1.4",
+    "CVE-2026-89425 tools.jackson.core:jackson-core@3.1.4",
+    "CVE-2026-91776 tools.jackson.core:jackson-databind@3.1.4",
+    "CVE-2026-91777 tools.jackson.core:jackson-databind@3.1.4"
+  ]
+}

@@ -1,0 +1,7 @@
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/C18-jakarta-inject-api-on-full/checklist/checklist-h2.json
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/C18-jakarta-inject-api-on-full/checklist/checklist-mysql.json
+57 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/C18-jakarta-inject-api-on-full/checklist/checklist-postgres.json
+ERROR:  relation "owners" does not exist
+LINE 1: select count(*) from owners where last_name='Lovelace'
+                             ^
+done

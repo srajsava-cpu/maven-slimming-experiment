@@ -1,0 +1,1 @@
+67f08e95f6d896d2f193d817625fcdb70460b055 B09-boot-health: exclude org.springframework.boot:spring-boot-health everywhere

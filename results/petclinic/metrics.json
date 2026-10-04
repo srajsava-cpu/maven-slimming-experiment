@@ -1,0 +1,3447 @@
+{
+ "project": "spring-petclinic",
+ "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+ "states": {
+  "baseline_session1": {
+   "artifact_bytes": 65831325,
+   "lib_count": 93,
+   "lib_bytes": 65137021,
+   "top15": [
+    {
+     "name": "hibernate-core-7.4.1.Final.jar",
+     "bytes": 15258514
+    },
+    {
+     "name": "byte-buddy-1.18.10.jar",
+     "bytes": 4655898
+    },
+    {
+     "name": "tomcat-embed-core-11.0.22.jar",
+     "bytes": 3599448
+    },
+    {
+     "name": "h2-2.4.240.jar",
+     "bytes": 2685418
+    },
+    {
+     "name": "mysql-connector-j-9.7.0.jar",
+     "bytes": 2607237
+    },
+    {
+     "name": "spring-web-7.0.8.jar",
+     "bytes": 2218865
+    },
+    {
+     "name": "aspectjweaver-1.9.25.1.jar",
+     "bytes": 2190661
+    },
+    {
+     "name": "spring-data-jpa-4.1.0.jar",
+     "bytes": 2178660
+    },
+    {
+     "name": "spring-core-7.0.8.jar",
+     "bytes": 2035553
+    },
+    {
+     "name": "jackson-databind-3.1.4.jar",
+     "bytes": 1940679
+    },
+    {
+     "name": "bootstrap-5.3.8.jar",
+     "bytes": 1841258
+    },
+    {
+     "name": "spring-data-commons-4.1.0.jar",
+     "bytes": 1773391
+    },
+    {
+     "name": "hibernate-validator-9.1.0.Final.jar",
+     "bytes": 1404084
+    },
+    {
+     "name": "spring-context-7.0.8.jar",
+     "bytes": 1398484
+    },
+    {
+     "name": "spring-boot-4.1.0.jar",
+     "bytes": 1391652
+    }
+   ],
+   "declared_by_scope": {
+    "compile": 9,
+    "runtime": 7,
+    "test": 12
+   },
+   "declared_total": 28,
+   "resolved": {
+    "by_scope": {
+     "compile": {
+      "direct": 9,
+      "transitive": 80,
+      "total": 89
+     },
+     "runtime": {
+      "direct": 7,
+      "transitive": 10,
+      "total": 17
+     },
+     "test": {
+      "direct": 12,
+      "transitive": 53,
+      "total": 65
+     }
+    },
+    "direct_total": 28,
+    "transitive_total": 143,
+    "total": 171
+   },
+   "tests": {
+    "run": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_list": [],
+   "startup_wall_s": {
+    "n": 10,
+    "median": 9.774,
+    "min": 9.698,
+    "max": 10.091,
+    "values": [
+     9.893,
+     10.091,
+     9.698,
+     9.795,
+     9.988,
+     9.736,
+     9.876,
+     9.721,
+     9.742,
+     9.753
+    ]
+   },
+   "startup_self_reported_s": {
+    "n": 10,
+    "median": 8.742,
+    "min": 8.554,
+    "max": 9.02,
+    "values": [
+     8.856,
+     9.02,
+     8.554,
+     8.786,
+     8.863,
+     8.557,
+     8.814,
+     8.618,
+     8.698,
+     8.594
+    ]
+   },
+   "clean_build_s": {
+    "n": 5,
+    "median": 15.405,
+    "min": 15.168,
+    "max": 15.685,
+    "values": [
+     15.685,
+     15.419,
+     15.168,
+     15.405,
+     15.306
+    ]
+   },
+   "trivy": {
+    "by_severity": {
+     "MEDIUM": 5,
+     "CRITICAL": 3,
+     "HIGH": 6
+    },
+    "total": 14,
+    "findings": [
+     "CVE-2026-19032 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-49844 org.apache.logging.log4j:log4j-api@2.25.4",
+     "CVE-2026-54291 org.postgresql:postgresql@42.7.11",
+     "CVE-2026-59889 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-65182 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-65905 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-68497 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-68525 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-77310 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-83557 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-89407 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-89425 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-91776 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-91777 tools.jackson.core:jackson-databind@3.1.4"
+    ]
+   },
+   "image": {
+    "image": "docker.io/library/spring-petclinic:4.0.0-SNAPSHOT",
+    "id": "sha256:0af2555018b77218e54d5985c0c7fb2ca7eaeb6562f4f3465930bc5dbf588c71",
+    "size_bytes_docker_inspect": 570913253,
+    "docker_image_ls": {
+     "Containers": "0",
+     "CreatedAt": "1980-01-01 00:00:01 +0000 UTC",
+     "CreatedSince": "46 years ago",
+     "Digest": "<none>",
+     "ID": "0af2555018b7",
+     "Repository": "spring-petclinic",
+     "SharedSize": "N/A",
+     "Size": "571MB",
+     "Tag": "4.0.0-SNAPSHOT",
+     "UniqueSize": "N/A"
+    },
+    "builder": "paketobuildpacks/builder-noble-java-tiny@sha256:b95da27fce97b58037f0c11ae934760c50730da4c9a24976205b53638592eba9",
+    "run_image": "paketobuildpacks/ubuntu-noble-run-tiny:0.0.138",
+    "command": "./mvnw -B spring-boot:build-image -DskipTests"
+   }
+  },
+  "baseline-rerun": {
+   "artifact_bytes": 65831328,
+   "lib_count": 93,
+   "lib_bytes": 65137021,
+   "top15": [
+    {
+     "name": "hibernate-core-7.4.1.Final.jar",
+     "bytes": 15258514
+    },
+    {
+     "name": "byte-buddy-1.18.10.jar",
+     "bytes": 4655898
+    },
+    {
+     "name": "tomcat-embed-core-11.0.22.jar",
+     "bytes": 3599448
+    },
+    {
+     "name": "h2-2.4.240.jar",
+     "bytes": 2685418
+    },
+    {
+     "name": "mysql-connector-j-9.7.0.jar",
+     "bytes": 2607237
+    },
+    {
+     "name": "spring-web-7.0.8.jar",
+     "bytes": 2218865
+    },
+    {
+     "name": "aspectjweaver-1.9.25.1.jar",
+     "bytes": 2190661
+    },
+    {
+     "name": "spring-data-jpa-4.1.0.jar",
+     "bytes": 2178660
+    },
+    {
+     "name": "spring-core-7.0.8.jar",
+     "bytes": 2035553
+    },
+    {
+     "name": "jackson-databind-3.1.4.jar",
+     "bytes": 1940679
+    },
+    {
+     "name": "bootstrap-5.3.8.jar",
+     "bytes": 1841258
+    },
+    {
+     "name": "spring-data-commons-4.1.0.jar",
+     "bytes": 1773391
+    },
+    {
+     "name": "hibernate-validator-9.1.0.Final.jar",
+     "bytes": 1404084
+    },
+    {
+     "name": "spring-context-7.0.8.jar",
+     "bytes": 1398484
+    },
+    {
+     "name": "spring-boot-4.1.0.jar",
+     "bytes": 1391652
+    }
+   ],
+   "declared_by_scope": {
+    "compile": 9,
+    "runtime": 7,
+    "test": 12
+   },
+   "declared_total": 28,
+   "resolved": {
+    "by_scope": {
+     "compile": {
+      "direct": 9,
+      "transitive": 80,
+      "total": 89
+     },
+     "runtime": {
+      "direct": 7,
+      "transitive": 10,
+      "total": 17
+     },
+     "test": {
+      "direct": 12,
+      "transitive": 53,
+      "total": 65
+     }
+    },
+    "direct_total": 28,
+    "transitive_total": 143,
+    "total": 171
+   },
+   "tests": {
+    "run": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_list": [],
+   "startup_wall_s": {
+    "n": 10,
+    "median": 9.312,
+    "min": 9.04,
+    "max": 10.059,
+    "values": [
+     9.135,
+     10.059,
+     9.486,
+     9.224,
+     9.345,
+     9.306,
+     9.318,
+     9.553,
+     9.04,
+     9.242
+    ]
+   },
+   "startup_self_reported_s": {
+    "n": 10,
+    "median": 8.296,
+    "min": 8.02,
+    "max": 9.042,
+    "values": [
+     8.142,
+     9.042,
+     8.418,
+     8.189,
+     8.311,
+     8.326,
+     8.282,
+     8.439,
+     8.02,
+     8.169
+    ]
+   },
+   "clean_build_s": {
+    "n": 5,
+    "median": 14.909,
+    "min": 14.564,
+    "max": 15.083,
+    "values": [
+     15.083,
+     14.909,
+     14.996,
+     14.564,
+     14.673
+    ]
+   },
+   "trivy": {
+    "by_severity": {
+     "MEDIUM": 5,
+     "CRITICAL": 3,
+     "HIGH": 6
+    },
+    "total": 14,
+    "findings": [
+     "CVE-2026-19032 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-49844 org.apache.logging.log4j:log4j-api@2.25.4",
+     "CVE-2026-54291 org.postgresql:postgresql@42.7.11",
+     "CVE-2026-59889 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-65182 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-65905 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-68497 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-68525 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-77310 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-83557 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-89407 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-89425 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-91776 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-91777 tools.jackson.core:jackson-databind@3.1.4"
+    ]
+   }
+  },
+  "free-only": {
+   "artifact_bytes": 62318298,
+   "lib_count": 83,
+   "lib_bytes": 61631419,
+   "top15": [
+    {
+     "name": "hibernate-core-7.4.1.Final.jar",
+     "bytes": 15258514
+    },
+    {
+     "name": "byte-buddy-1.18.10.jar",
+     "bytes": 4655898
+    },
+    {
+     "name": "tomcat-embed-core-11.0.22.jar",
+     "bytes": 3599448
+    },
+    {
+     "name": "h2-2.4.240.jar",
+     "bytes": 2685418
+    },
+    {
+     "name": "mysql-connector-j-9.7.0.jar",
+     "bytes": 2607237
+    },
+    {
+     "name": "spring-web-7.0.8.jar",
+     "bytes": 2218865
+    },
+    {
+     "name": "spring-data-jpa-4.1.0.jar",
+     "bytes": 2178660
+    },
+    {
+     "name": "spring-core-7.0.8.jar",
+     "bytes": 2035553
+    },
+    {
+     "name": "jackson-databind-3.1.4.jar",
+     "bytes": 1940679
+    },
+    {
+     "name": "bootstrap-5.3.8.jar",
+     "bytes": 1841258
+    },
+    {
+     "name": "spring-data-commons-4.1.0.jar",
+     "bytes": 1773391
+    },
+    {
+     "name": "hibernate-validator-9.1.0.Final.jar",
+     "bytes": 1404084
+    },
+    {
+     "name": "spring-context-7.0.8.jar",
+     "bytes": 1398484
+    },
+    {
+     "name": "spring-boot-4.1.0.jar",
+     "bytes": 1391652
+    },
+    {
+     "name": "postgresql-42.7.11.jar",
+     "bytes": 1142677
+    }
+   ],
+   "declared_by_scope": {
+    "compile": 9,
+    "runtime": 7,
+    "test": 7
+   },
+   "declared_total": 23,
+   "resolved": {
+    "by_scope": {
+     "compile": {
+      "direct": 9,
+      "transitive": 73,
+      "total": 82
+     },
+     "runtime": {
+      "direct": 7,
+      "transitive": 7,
+      "total": 14
+     },
+     "test": {
+      "direct": 7,
+      "transitive": 47,
+      "total": 54
+     }
+    },
+    "direct_total": 23,
+    "transitive_total": 127,
+    "total": 150
+   },
+   "tests": {
+    "run": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_list": [],
+   "startup_wall_s": {
+    "n": 10,
+    "median": 9.261,
+    "min": 8.938,
+    "max": 10.372,
+    "values": [
+     10.372,
+     9.302,
+     9.298,
+     9.412,
+     8.986,
+     9.225,
+     8.938,
+     9.161,
+     9.469,
+     8.958
+    ]
+   },
+   "startup_self_reported_s": {
+    "n": 10,
+    "median": 8.253,
+    "min": 7.947,
+    "max": 9.127,
+    "values": [
+     9.127,
+     8.281,
+     8.252,
+     8.324,
+     7.991,
+     8.254,
+     7.947,
+     8.148,
+     8.416,
+     7.979
+    ]
+   },
+   "clean_build_s": {
+    "n": 5,
+    "median": 14.145,
+    "min": 13.94,
+    "max": 15.025,
+    "values": [
+     13.94,
+     14.084,
+     14.145,
+     14.256,
+     15.025
+    ]
+   },
+   "trivy": {
+    "by_severity": {
+     "CRITICAL": 3,
+     "HIGH": 6,
+     "MEDIUM": 4
+    },
+    "total": 13,
+    "findings": [
+     "CVE-2026-19032 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-54291 org.postgresql:postgresql@42.7.11",
+     "CVE-2026-59889 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-65182 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-65905 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-68497 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-68525 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-77310 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-83557 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-89407 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-89425 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-91776 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-91777 tools.jackson.core:jackson-databind@3.1.4"
+    ]
+   }
+  },
+  "full": {
+   "artifact_bytes": 58504809,
+   "lib_count": 80,
+   "lib_bytes": 57827539,
+   "top15": [
+    {
+     "name": "hibernate-core-7.4.1.Final.jar",
+     "bytes": 15258514
+    },
+    {
+     "name": "byte-buddy-1.18.10.jar",
+     "bytes": 4655898
+    },
+    {
+     "name": "tomcat-embed-core-11.0.22.jar",
+     "bytes": 3599448
+    },
+    {
+     "name": "h2-2.4.240.jar",
+     "bytes": 2685418
+    },
+    {
+     "name": "spring-web-7.0.8.jar",
+     "bytes": 2218865
+    },
+    {
+     "name": "spring-data-jpa-4.1.0.jar",
+     "bytes": 2178660
+    },
+    {
+     "name": "spring-core-7.0.8.jar",
+     "bytes": 2035553
+    },
+    {
+     "name": "jackson-databind-3.1.4.jar",
+     "bytes": 1940679
+    },
+    {
+     "name": "bootstrap-5.3.8.jar",
+     "bytes": 1841258
+    },
+    {
+     "name": "spring-data-commons-4.1.0.jar",
+     "bytes": 1773391
+    },
+    {
+     "name": "hibernate-validator-9.1.0.Final.jar",
+     "bytes": 1404084
+    },
+    {
+     "name": "spring-context-7.0.8.jar",
+     "bytes": 1398484
+    },
+    {
+     "name": "spring-boot-4.1.0.jar",
+     "bytes": 1391652
+    },
+    {
+     "name": "spring-webmvc-7.0.8.jar",
+     "bytes": 1106847
+    },
+    {
+     "name": "caffeine-3.2.4.jar",
+     "bytes": 1029147
+    }
+   ],
+   "declared_by_scope": {
+    "compile": 8,
+    "runtime": 5,
+    "test": 3
+   },
+   "declared_total": 16,
+   "resolved": {
+    "by_scope": {
+     "compile": {
+      "direct": 8,
+      "transitive": 73,
+      "total": 81
+     },
+     "runtime": {
+      "direct": 5,
+      "transitive": 7,
+      "total": 12
+     },
+     "test": {
+      "direct": 3,
+      "transitive": 35,
+      "total": 38
+     }
+    },
+    "direct_total": 16,
+    "transitive_total": 115,
+    "total": 131
+   },
+   "tests": {
+    "run": 77,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_list": [],
+   "startup_wall_s": {
+    "n": 10,
+    "median": 9.133,
+    "min": 8.767,
+    "max": 9.539,
+    "values": [
+     9.277,
+     9.164,
+     9.144,
+     8.932,
+     8.767,
+     8.9,
+     9.082,
+     9.121,
+     9.371,
+     9.539
+    ]
+   },
+   "startup_self_reported_s": {
+    "n": 10,
+    "median": 8.149,
+    "min": 7.725,
+    "max": 8.591,
+    "values": [
+     8.284,
+     8.192,
+     8.141,
+     7.989,
+     7.725,
+     7.884,
+     8.096,
+     8.156,
+     8.418,
+     8.591
+    ]
+   },
+   "clean_build_s": {
+    "n": 5,
+    "median": 13.778,
+    "min": 13.356,
+    "max": 14.67,
+    "values": [
+     13.356,
+     14.67,
+     13.938,
+     13.778,
+     13.753
+    ]
+   },
+   "trivy": {
+    "by_severity": {
+     "CRITICAL": 3,
+     "HIGH": 5,
+     "MEDIUM": 4
+    },
+    "total": 12,
+    "findings": [
+     "CVE-2026-19032 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-59889 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-65182 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-65905 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-68497 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-68525 org.apache.tomcat.embed:tomcat-embed-core@11.0.22",
+     "CVE-2026-77310 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-83557 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-89407 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-89425 tools.jackson.core:jackson-core@3.1.4",
+     "CVE-2026-91776 tools.jackson.core:jackson-databind@3.1.4",
+     "CVE-2026-91777 tools.jackson.core:jackson-databind@3.1.4"
+    ]
+   }
+  }
+ },
+ "clean_build_interleaved_s": {
+  "baseline": {
+   "n": 5,
+   "median": 15.88,
+   "min": 15.453,
+   "max": 17.891,
+   "values": [
+    15.88,
+    15.453,
+    16.372,
+    17.891,
+    15.526
+   ]
+  },
+  "free-only": {
+   "n": 5,
+   "median": 15.438,
+   "min": 14.799,
+   "max": 16.613,
+   "values": [
+    15.438,
+    15.227,
+    16.613,
+    14.799,
+    15.442
+   ]
+  },
+  "full": {
+   "n": 5,
+   "median": 14.52,
+   "min": 13.507,
+   "max": 16.219,
+   "values": [
+    14.247,
+    14.521,
+    16.219,
+    13.507,
+    14.52
+   ]
+  }
+ },
+ "images": {
+  "builder": "paketobuildpacks/builder-noble-java-tiny@sha256:b95da27fce97b58037f0c11ae934760c50730da4c9a24976205b53638592eba9",
+  "run_image": "paketobuildpacks/ubuntu-noble-run-tiny:0.0.138",
+  "command": "./mvnw -B spring-boot:build-image -DskipTests -Dspring-boot.build-image.builder=<builder> -Dspring-boot.build-image.imageName=petclinic-<state>:measure",
+  "note": "size_docker_inspect = containerd image store disk usage (compressed blobs + unpacked snapshot, so a change appears roughly twice); docker_save_bytes = size of the `docker save` OCI archive = compressed layer blobs (matches Docker CONTENT SIZE)",
+  "states": {
+   "baseline": {
+    "id": "sha256:c44f576e36c5f5faecba507cf0824ff010ad0c3a7bc3e02848e853fd77ab4898",
+    "size_docker_inspect": 570913253,
+    "docker_save_bytes": 276368384
+   },
+   "free-only": {
+    "id": "sha256:e4d9292b6ce9eb67e183246ba5b0aae61046301eee7c087f5eef573bc833a28c",
+    "size_docker_inspect": 563608549,
+    "docker_save_bytes": 272721408
+   },
+   "full": {
+    "id": "sha256:de4e2cc78815e16bdfb6af53fc25f33fd3b592b6603b8ab20ec21918231a7c16",
+    "size_docker_inspect": 555832804,
+    "docker_save_bytes": 268836864
+   }
+  }
+ },
+ "trivy_db": {
+  "Version": "0.75.0",
+  "VulnerabilityDB": {
+   "Version": 2,
+   "NextUpdate": "2026-10-04T19:02:38.737369504Z",
+   "UpdatedAt": "2026-10-03T19:02:38.737369755Z",
+   "DownloadedAt": "2026-10-03T22:53:48.783850288Z"
+  },
+  "JavaDB": {
+   "Version": 1,
+   "NextUpdate": "2026-10-06T01:07:11.83014273Z",
+   "UpdatedAt": "2026-10-03T01:07:11.830142851Z",
+   "DownloadedAt": "2026-10-03T22:54:09.479448641Z"
+  }
+ },
+ "candidates": {
+  "A01-devtools": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830653,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -672,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 170,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "A02-starter-actuator": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 63746291,
+   "lib_count": 85,
+   "artifact_delta_vs_baseline": -2085034,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "micrometer-core-1.17.0.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "spring-boot-actuator-4.1.0.jar",
+    "spring-boot-actuator-autoconfigure-4.1.0.jar",
+    "spring-boot-health-4.1.0.jar",
+    "spring-boot-micrometer-metrics-4.1.0.jar",
+    "spring-boot-micrometer-observation-4.1.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 170,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A03-starter-cache": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 170,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A04-starter-data-jpa": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 170,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A05-starter-thymeleaf": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 64235218,
+   "lib_count": 88,
+   "artifact_delta_vs_baseline": -1596107,
+   "libs_removed_vs_baseline": [
+    "attoparser-2.0.7.RELEASE.jar",
+    "spring-boot-thymeleaf-4.1.0.jar",
+    "thymeleaf-3.1.5.RELEASE.jar",
+    "thymeleaf-spring6-3.1.5.RELEASE.jar",
+    "unbescape-1.1.6.RELEASE.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 170,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A06-starter-validation": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 170,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A07-starter-webmvc": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 170,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A08-h2": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 16,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 169,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A09-caffeine": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 64779742,
+   "lib_count": 91,
+   "artifact_delta_vs_baseline": -1051583,
+   "libs_removed_vs_baseline": [
+    "caffeine-3.2.4.jar",
+    "error_prone_annotations-2.49.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 168,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A10-mysql-connector-j": {
+   "verify_exit": 1,
+   "tests_run": 80,
+   "failures": 0,
+   "errors": 1,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     1
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 169,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A11-postgresql": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 2,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 169,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A12-webjars-locator-lite": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65821263,
+   "lib_count": 92,
+   "artifact_delta_vs_baseline": -10062,
+   "libs_removed_vs_baseline": [
+    "webjars-locator-lite-1.1.3.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 169,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A13-webjar-bootstrap": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 63988742,
+   "lib_count": 92,
+   "artifact_delta_vs_baseline": -1842583,
+   "libs_removed_vs_baseline": [
+    "bootstrap-5.3.8.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 169,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A14-webjar-font-awesome": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65148601,
+   "lib_count": 92,
+   "artifact_delta_vs_baseline": -682724,
+   "libs_removed_vs_baseline": [
+    "font-awesome-4.7.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 169,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "A15-starter-data-jpa-test": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 165,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A16-starter-restclient": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830673,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -652,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 170,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "A17-starter-restclient-test": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 165,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A18-starter-thymeleaf-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830669,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -656,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 169,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "A19-starter-validation-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830663,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -662,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 168,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "A20-starter-webmvc-test": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 165,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A21-starter-actuator-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830656,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -669,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 164,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "A22-docker-compose-rerun": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 2,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A22-docker-compose": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 2,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 163,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "A23-starter-cache-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65830649,
+   "lib_count": 93,
+   "artifact_delta_vs_baseline": -676,
+   "libs_removed_vs_baseline": [],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 162,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B01-snakeyaml": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65489879,
+   "lib_count": 92,
+   "artifact_delta_vs_baseline": -341446,
+   "libs_removed_vs_baseline": [
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 161,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B02-HdrHistogram": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65311731,
+   "lib_count": 91,
+   "artifact_delta_vs_baseline": -519594,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 160,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B03-jul-to-slf4j": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65304690,
+   "lib_count": 90,
+   "artifact_delta_vs_baseline": -526635,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 159,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B04-micrometer-jakarta9": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65249313,
+   "lib_count": 89,
+   "artifact_delta_vs_baseline": -582012,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 158,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B05-boot-actuator": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 10,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B06-boot-actuator-autoconfigure": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 64749753,
+   "lib_count": 87,
+   "artifact_delta_vs_baseline": -1081572,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-boot-actuator-4.1.0.jar",
+    "spring-boot-actuator-autoconfigure-4.1.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 156,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "B07-boot-micrometer-metrics": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 64055025,
+   "lib_count": 86,
+   "artifact_delta_vs_baseline": -1776300,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-core-1.17.0.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-boot-micrometer-metrics-4.1.0.jar",
+    "spring-boot-micrometer-observation-4.1.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 155,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "B08-boot-micrometer-observation": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 10,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B09-boot-health": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65093441,
+   "lib_count": 88,
+   "artifact_delta_vs_baseline": -737884,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-boot-health-4.1.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 157,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "B10-boot-web-server": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 10,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B11-boot-tomcat": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 10,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B12-boot-http-converter": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 51,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B13-boot-servlet": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 51,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B14-boot-thymeleaf": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 2,
+   "errors": 4,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 153,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B15-thymeleaf-spring6": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 2,
+   "errors": 4,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 154,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B16-attoparser": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 2,
+   "errors": 32,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B17-unbescape": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 2,
+   "errors": 32,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 157,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B18-boot-data-commons": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65218374,
+   "lib_count": 88,
+   "artifact_delta_vs_baseline": -612951,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-boot-data-commons-4.1.0.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 157,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "B19-boot-validation": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 154,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B20-boot-data-jpa": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 141,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "B21-commons-codec-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65249325,
+   "lib_count": 89,
+   "artifact_delta_vs_baseline": -582000,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 157,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B22-awaitility-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65249341,
+   "lib_count": 89,
+   "artifact_delta_vs_baseline": -581984,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 156,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B23-micrometer-observation-test": {
+   "noop": "NO-OP: already absent from the resolved graph; removed together with its parent spring-boot-starter-actuator-test by A21"
+  },
+  "B24-boot-restclient-test": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 65249367,
+   "lib_count": 89,
+   "artifact_delta_vs_baseline": -581958,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 155,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "B25-boot-micrometer-metrics-test": {
+   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-actuator-test by A21"
+  },
+  "B26-boot-cache-test": {
+   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-cache-test by A23"
+  },
+  "C01-aspectjweaver": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 63057915,
+   "lib_count": 88,
+   "artifact_delta_vs_baseline": -2773410,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 154,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C02-spring-aspects": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 63007293,
+   "lib_count": 87,
+   "artifact_delta_vs_baseline": -2824032,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 153,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C03-tomcat-embed-websocket": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62720000,
+   "lib_count": 86,
+   "artifact_delta_vs_baseline": -3111325,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 152,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C04-no-jarmode-tools": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62665869,
+   "lib_count": 85,
+   "artifact_delta_vs_baseline": -3165456,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 152,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C05-cache-api": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 151,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C06-jakarta-xml-bind-api": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 152,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C07-jaxb-runtime-rerun": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 61076668,
+   "lib_count": 77,
+   "artifact_delta_vs_baseline": -4754657,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "angus-activation-2.0.3.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "istack-commons-runtime-4.1.2.jar",
+    "jaxb-core-4.0.9.jar",
+    "jaxb-runtime-4.0.9.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar",
+    "txw2-4.0.9.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 144,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "C07-jaxb-runtime": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 61474622,
+   "lib_count": 80,
+   "artifact_delta_vs_baseline": -4356703,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "angus-activation-2.0.3.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "istack-commons-runtime-4.1.2.jar",
+    "jaxb-core-4.0.9.jar",
+    "jaxb-runtime-4.0.9.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar",
+    "txw2-4.0.9.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 147,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "C08-byte-buddy-rerun": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 70,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C08-byte-buddy": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 70,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 151,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C09-log4j-to-slf4j": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62288915,
+   "lib_count": 83,
+   "artifact_delta_vs_baseline": -3542410,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 150,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C10-log4j-api": {
+   "noop": "NO-OP: already absent; log4j-api was only a dependency of log4j-to-slf4j, excluded by C09"
+  },
+  "C11-error-prone-annotations": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62267903,
+   "lib_count": 82,
+   "artifact_delta_vs_baseline": -3563422,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 149,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C12-jspecify-rerun": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 63,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C12-jspecify": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 63,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C13-antlr4-runtime-rerun": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 20,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C13-antlr4-runtime": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 20,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C14-HikariCP": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 4,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C15-tomcat-embed-el": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 22,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C16-jboss-logging": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 65,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C17-hibernate-models": {
+   "verify_exit": 1,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 20,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "resolved_total": 148,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "C18-jakarta-inject-api-on-full": {
+   "verify_exit": 0,
+   "tests_run": 77,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "artifact_bytes": 58504809,
+   "lib_count": 80,
+   "artifact_delta_vs_baseline": -7326516,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jakarta.inject-api-2.0.1.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "mysql-connector-j-9.7.0.jar",
+    "postgresql-42.7.11.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 131,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "C18-jakarta-inject-api-rerun": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62318298,
+   "lib_count": 83,
+   "artifact_delta_vs_baseline": -3513027,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jakarta.inject-api-2.0.1.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 150,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  },
+  "C18-jakarta-inject-api": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62256533,
+   "lib_count": 81,
+   "artifact_delta_vs_baseline": -3574792,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jakarta.inject-api-2.0.1.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 148,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "F01-drop-mysql": {
+   "verify_exit": 0,
+   "tests_run": 79,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "artifact_bytes": 59656096,
+   "lib_count": 81,
+   "artifact_delta_vs_baseline": -6175229,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "mysql-connector-j-9.7.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 145,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "F01a-drop-mysql-too-broad": {
+   "verify_exit": 1,
+   "tests_run": 0,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": [
+     7,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.vet.VetControllerTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": [
+     12,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": [
+     5,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": [
+     18,
+     null
+    ],
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": [
+     3,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetControllerTests": [
+     14,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.model.ValidatorTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": [
+     1,
+     null
+    ],
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": [
+     3,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "resolved_total": 133,
+   "checklist": "skipped",
+   "tests_pass": false,
+   "verdict": "REJECT"
+  },
+  "F02-drop-postgres": {
+   "verify_exit": 0,
+   "tests_run": 77,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "artifact_bytes": 58509207,
+   "lib_count": 80,
+   "artifact_delta_vs_baseline": -7322118,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "mysql-connector-j-9.7.0.jar",
+    "postgresql-42.7.11.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 143,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "F03-drop-testcontainers": {
+   "verify_exit": 0,
+   "tests_run": 77,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "artifact_bytes": 58509133,
+   "lib_count": 80,
+   "artifact_delta_vs_baseline": -7322192,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "jul-to-slf4j-2.0.18.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "mysql-connector-j-9.7.0.jar",
+    "postgresql-42.7.11.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 131,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "R01-revert-B03-jul-to-slf4j": {
+   "verify_exit": 0,
+   "tests_run": 77,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": [
+     2,
+     null
+    ],
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": [
+     2,
+     null
+    ]
+   },
+   "same_tests_as_baseline": false,
+   "artifact_bytes": 58516220,
+   "lib_count": 81,
+   "artifact_delta_vs_baseline": -7315105,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "mysql-connector-j-9.7.0.jar",
+    "postgresql-42.7.11.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "spring-boot-jarmode-tools-4.1.0.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 132,
+   "checklist": "FAIL",
+   "tests_pass": true,
+   "verdict": "REJECT"
+  },
+  "S-free-only": {
+   "verify_exit": 0,
+   "tests_run": 81,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "baseline_tests_run": 81,
+   "baseline_skipped": 0,
+   "test_classes_missing_or_changed": {},
+   "same_tests_as_baseline": true,
+   "artifact_bytes": 62329682,
+   "lib_count": 84,
+   "artifact_delta_vs_baseline": -3501643,
+   "libs_removed_vs_baseline": [
+    "HdrHistogram-2.2.2.jar",
+    "aspectjweaver-1.9.25.1.jar",
+    "error_prone_annotations-2.49.0.jar",
+    "log4j-api-2.25.4.jar",
+    "log4j-to-slf4j-2.25.4.jar",
+    "micrometer-jakarta9-1.17.0.jar",
+    "snakeyaml-2.6.jar",
+    "spring-aspects-7.0.8.jar",
+    "tomcat-embed-websocket-11.0.22.jar"
+   ],
+   "libs_added_vs_baseline": [],
+   "resolved_total": 151,
+   "checklist": "pass",
+   "tests_pass": true,
+   "verdict": "KEEP-ELIGIBLE"
+  }
+ },
+ "verification": {
+  "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+  "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\"",
+  "baseline": {
+   "verify_exit": 0,
+   "artifact_bytes": 65831325,
+   "lib_count": 93,
+   "resolved_count": 171,
+   "tests": {
+    "run": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_tests": [],
+   "per_class": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": 2,
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": 2,
+    "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+    "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+    "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+    "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+    "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+    "org.springframework.samples.petclinic.vet.VetTests": 1
+   },
+   "sha256": "c06eabdea88cf3c6c363909e59b790dff7794bbd74007dc303ac0d67c7ff2f0f",
+   "report_files": 18
+  },
+  "free": {
+   "verify_exit": 0,
+   "artifact_bytes": 62318329,
+   "lib_count": 83,
+   "resolved_count": 150,
+   "tests": {
+    "run": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_tests": [],
+   "per_class": {
+    "org.springframework.samples.petclinic.MySqlIntegrationTests": 2,
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+    "org.springframework.samples.petclinic.PostgresIntegrationTests": 2,
+    "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+    "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+    "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+    "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+    "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+    "org.springframework.samples.petclinic.vet.VetTests": 1
+   },
+   "sha256": "3ad2df4e8d00a984c9752a6b97a702a5ae26b189ae6395a442cca0834a95ef13",
+   "report_files": 18
+  },
+  "full": {
+   "verify_exit": 0,
+   "artifact_bytes": 58504865,
+   "lib_count": 80,
+   "resolved_count": 131,
+   "tests": {
+    "run": 77,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+   },
+   "skipped_tests": [],
+   "per_class": {
+    "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+    "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+    "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+    "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+    "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+    "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+    "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+    "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+    "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+    "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+    "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+    "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+    "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+    "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+    "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+    "org.springframework.samples.petclinic.vet.VetTests": 1
+   },
+   "sha256": "bc38acbae3c4016fac7ef8c3f375e464f54a7ded3271d938f1ba865dfa26bf1c",
+   "report_files": 16
+  }
+ },
+ "verification_mismatch_explained": "free +31 B, full +56 B vs my builds: only BOOT-INF/classes/git.properties differs (branch/build user/commit metadata); counts identical"
+}

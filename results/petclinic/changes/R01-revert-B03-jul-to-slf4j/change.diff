@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index 944bec8..beb6c33 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -51,10 +51,6 @@
+           <groupId>org.hdrhistogram</groupId>
+           <artifactId>HdrHistogram</artifactId>
+         </exclusion>
+-        <exclusion>
+-          <groupId>org.slf4j</groupId>
+-          <artifactId>jul-to-slf4j</artifactId>
+-        </exclusion>
+         <exclusion>
+           <groupId>io.micrometer</groupId>
+           <artifactId>micrometer-jakarta9</artifactId>

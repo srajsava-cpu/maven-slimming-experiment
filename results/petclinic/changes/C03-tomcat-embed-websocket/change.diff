@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index e8f7d2d..36386e9 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -90,6 +90,12 @@
+     <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-webmvc</artifactId>
++      <exclusions>
++        <exclusion>
++          <groupId>org.apache.tomcat.embed</groupId>
++          <artifactId>tomcat-embed-websocket</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+ 
+     <dependency>

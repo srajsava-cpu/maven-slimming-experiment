@@ -1,0 +1,29 @@
+diff --git a/pom.xml b/pom.xml
+index db5b9f7..f3d56ff 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -93,12 +93,6 @@
+       <artifactId>postgresql</artifactId>
+       <scope>runtime</scope>
+     </dependency>
+-    <dependency>
+-      <groupId>org.webjars</groupId>
+-      <artifactId>webjars-locator-lite</artifactId>
+-      <version>${webjars-locator.version}</version>
+-      <scope>runtime</scope>
+-    </dependency>
+     <dependency>
+       <groupId>org.webjars.npm</groupId>
+       <artifactId>bootstrap</artifactId>
+@@ -112,11 +106,6 @@
+       <scope>runtime</scope>
+     </dependency>
+ 
+-    <dependency>
+-      <groupId>org.springframework.boot</groupId>
+-      <artifactId>spring-boot-devtools</artifactId>
+-      <optional>true</optional>
+-    </dependency>
+ 
+     <dependency>
+       <groupId>org.springframework.boot</groupId>

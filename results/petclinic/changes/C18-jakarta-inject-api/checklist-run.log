@@ -1,0 +1,4 @@
+56 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/C18-jakarta-inject-api/checklist/checklist-h2.json
+APP FAILED TO START for profile mysql
+56 checks written to /workspaces/maven-slimming-experiment/results/petclinic/changes/C18-jakarta-inject-api/checklist/checklist-postgres.json
+done

@@ -1,0 +1,20 @@
+{
+ "image": "docker.io/library/spring-petclinic:4.0.0-SNAPSHOT",
+ "id": "sha256:0af2555018b77218e54d5985c0c7fb2ca7eaeb6562f4f3465930bc5dbf588c71",
+ "size_bytes_docker_inspect": 570913253,
+ "docker_image_ls": {
+  "Containers": "0",
+  "CreatedAt": "1980-01-01 00:00:01 +0000 UTC",
+  "CreatedSince": "46 years ago",
+  "Digest": "<none>",
+  "ID": "0af2555018b7",
+  "Repository": "spring-petclinic",
+  "SharedSize": "N/A",
+  "Size": "571MB",
+  "Tag": "4.0.0-SNAPSHOT",
+  "UniqueSize": "N/A"
+ },
+ "builder": "paketobuildpacks/builder-noble-java-tiny@sha256:b95da27fce97b58037f0c11ae934760c50730da4c9a24976205b53638592eba9",
+ "run_image": "paketobuildpacks/ubuntu-noble-run-tiny:0.0.138",
+ "command": "./mvnw -B spring-boot:build-image -DskipTests"
+}

@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index 5571b1a..e92c690 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -77,6 +77,10 @@
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-aspects</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.glassfish.jaxb</groupId>
++          <artifactId>jaxb-runtime</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

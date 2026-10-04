@@ -1,0 +1,1 @@
+3902cd961f2f0c89fe238a816be875b35e9dfde1 F01-drop-mysql: feature-removing: drop MySQL support (driver, Testcontainers MySQL module + MySQL test classes, mysql profile + SQL)

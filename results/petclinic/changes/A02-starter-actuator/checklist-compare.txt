@@ -1,0 +1,129 @@
+== h2
+57 baseline items, 57 candidate items, 41 differences
+  DIFF act-root [status]: baseline=200 candidate=404
+  DIFF act-root [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF info [status]: baseline=200 candidate=404
+  DIFF info [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF info [signature]: baseline="keys=['build', 'git']; build.keys=['artifact', 'encoding', 'group', 'java', 'name', 'time', 'version']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF caches [status]: baseline=200 candidate=404
+  DIFF caches [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom [status]: baseline=200 candidate=404
+  DIFF sbom [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF sbom [signature]: baseline="ids=['application']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom-app [status]: baseline=200 candidate=404
+  DIFF sbom-app [content_type]: baseline='application/vnd.cyclonedx+json' candidate='text/html'
+  DIFF sbom-app [signature]: baseline='bomFormat=CycloneDX' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF act-beans [status]: baseline=200 candidate=404
+  DIFF act-beans [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-conditions [status]: baseline=200 candidate=404
+  DIFF act-conditions [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-configprops [status]: baseline=200 candidate=404
+  DIFF act-configprops [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-env [status]: baseline=200 candidate=404
+  DIFF act-env [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-loggers [status]: baseline=200 candidate=404
+  DIFF act-loggers [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-mappings [status]: baseline=200 candidate=404
+  DIFF act-mappings [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-scheduledtasks [status]: baseline=200 candidate=404
+  DIFF act-scheduledtasks [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-threaddump [status]: baseline=200 candidate=404
+  DIFF act-threaddump [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+== mysql
+57 baseline items, 57 candidate items, 41 differences
+  DIFF act-root [status]: baseline=200 candidate=404
+  DIFF act-root [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF info [status]: baseline=200 candidate=404
+  DIFF info [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF info [signature]: baseline="keys=['build', 'git']; build.keys=['artifact', 'encoding', 'group', 'java', 'name', 'time', 'version']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF caches [status]: baseline=200 candidate=404
+  DIFF caches [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom [status]: baseline=200 candidate=404
+  DIFF sbom [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF sbom [signature]: baseline="ids=['application']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom-app [status]: baseline=200 candidate=404
+  DIFF sbom-app [content_type]: baseline='application/vnd.cyclonedx+json' candidate='text/html'
+  DIFF sbom-app [signature]: baseline='bomFormat=CycloneDX' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF act-beans [status]: baseline=200 candidate=404
+  DIFF act-beans [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-conditions [status]: baseline=200 candidate=404
+  DIFF act-conditions [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-configprops [status]: baseline=200 candidate=404
+  DIFF act-configprops [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-env [status]: baseline=200 candidate=404
+  DIFF act-env [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-loggers [status]: baseline=200 candidate=404
+  DIFF act-loggers [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-mappings [status]: baseline=200 candidate=404
+  DIFF act-mappings [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-scheduledtasks [status]: baseline=200 candidate=404
+  DIFF act-scheduledtasks [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-threaddump [status]: baseline=200 candidate=404
+  DIFF act-threaddump [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+== postgres
+57 baseline items, 57 candidate items, 41 differences
+  DIFF act-root [status]: baseline=200 candidate=404
+  DIFF act-root [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-root [signature]: baseline="_links=['beans', 'caches', 'caches-cache', 'conditions', 'configprops', 'configprops-prefix', 'env', 'env-toMatch', 'health', 'health-path', 'info', 'loggers', 'loggers-name', 'mappings', 'metrics', 'metrics-requiredMetricName', 'sbom', 'sbom-id', 'scheduledtasks', 'self', 'threaddump']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health [status]: baseline=200 candidate=404
+  DIFF health [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF health [signature]: baseline='status=UP; components=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF health-db [content_type]: baseline='' candidate='text/html'
+  DIFF info [status]: baseline=200 candidate=404
+  DIFF info [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF info [signature]: baseline="keys=['build', 'git']; build.keys=['artifact', 'encoding', 'group', 'java', 'name', 'time', 'version']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metrics [status]: baseline=200 candidate=404
+  DIFF metrics [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metrics [signature]: baseline='count=67; cache.*=[]' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF metric-jvm [status]: baseline=200 candidate=404
+  DIFF metric-jvm [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF metric-jvm [signature]: baseline='name=jvm.memory.used' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF caches [status]: baseline=200 candidate=404
+  DIFF caches [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF caches [signature]: baseline='cacheManager:vets->com.github.benmanes.caffeine.cache.UnboundedLocalCache$UnboundedLocalManualCache' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom [status]: baseline=200 candidate=404
+  DIFF sbom [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF sbom [signature]: baseline="ids=['application']" candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF sbom-app [status]: baseline=200 candidate=404
+  DIFF sbom-app [content_type]: baseline='application/vnd.cyclonedx+json' candidate='text/html'
+  DIFF sbom-app [signature]: baseline='bomFormat=CycloneDX' candidate='SIGERR JSONDecodeError: Expecting value: line 1 column 1 (char 0)'
+  DIFF act-beans [status]: baseline=200 candidate=404
+  DIFF act-beans [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-conditions [status]: baseline=200 candidate=404
+  DIFF act-conditions [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-configprops [status]: baseline=200 candidate=404
+  DIFF act-configprops [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-env [status]: baseline=200 candidate=404
+  DIFF act-env [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-loggers [status]: baseline=200 candidate=404
+  DIFF act-loggers [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-mappings [status]: baseline=200 candidate=404
+  DIFF act-mappings [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-scheduledtasks [status]: baseline=200 candidate=404
+  DIFF act-scheduledtasks [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'
+  DIFF act-threaddump [status]: baseline=200 candidate=404
+  DIFF act-threaddump [content_type]: baseline='application/vnd.spring-boot.actuator.v3+json' candidate='text/html'

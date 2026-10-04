@@ -1,0 +1,15 @@
+diff --git a/pom.xml b/pom.xml
+index 35aaf8a..9ce855c 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -81,6 +81,10 @@
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-aspects</artifactId>
+         </exclusion>
++        <exclusion>
++          <groupId>org.antlr</groupId>
++          <artifactId>antlr4-runtime</artifactId>
++        </exclusion>
+       </exclusions>
+     </dependency>
+     <dependency>

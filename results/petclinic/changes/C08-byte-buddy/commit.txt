@@ -1,0 +1,1 @@
+19b11a34b463ea099410b06c0446ca899b4fd23e C08-byte-buddy: exclude net.bytebuddy:byte-buddy everywhere

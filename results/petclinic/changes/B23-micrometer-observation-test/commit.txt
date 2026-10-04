@@ -1,0 +1,1 @@
+fc2afd20fa4b0163ca060271fec199ec8171c8a8 B22-awaitility-test: exclude org.awaitility:awaitility everywhere

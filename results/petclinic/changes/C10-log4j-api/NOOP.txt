@@ -1,0 +1,1 @@
+NO-OP: already absent; log4j-api was only a dependency of log4j-to-slf4j, excluded by C09

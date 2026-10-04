@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index 3ef33a6..955e971 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -42,6 +42,12 @@
+     <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-actuator</artifactId>
++      <exclusions>
++        <exclusion>
++          <groupId>org.yaml</groupId>
++          <artifactId>snakeyaml</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+     <dependency>
+       <groupId>org.springframework.boot</groupId>

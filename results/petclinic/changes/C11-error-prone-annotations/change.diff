@@ -1,0 +1,17 @@
+diff --git a/pom.xml b/pom.xml
+index 5bbefd3..35aaf8a 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -120,6 +120,12 @@
+       <groupId>com.github.ben-manes.caffeine</groupId>
+       <artifactId>caffeine</artifactId>
+       <scope>runtime</scope>
++      <exclusions>
++        <exclusion>
++          <groupId>com.google.errorprone</groupId>
++          <artifactId>error_prone_annotations</artifactId>
++        </exclusion>
++      </exclusions>
+     </dependency>
+     <dependency>
+       <groupId>com.mysql</groupId>

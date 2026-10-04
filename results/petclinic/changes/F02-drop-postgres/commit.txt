@@ -1,0 +1,1 @@
+a16d32b2ae42dfa22e874ef4140727d929fffbb9 F02-drop-postgres: feature-removing: drop PostgreSQL support (driver, Postgres tests + Docker Compose test support, postgres profile + SQL)

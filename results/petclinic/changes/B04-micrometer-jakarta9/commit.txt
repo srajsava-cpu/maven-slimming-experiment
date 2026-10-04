@@ -1,0 +1,1 @@
+09d792f3e7be3a9504818da7699d37cc99bb2c22 B04-micrometer-jakarta9: exclude io.micrometer:micrometer-jakarta9 everywhere

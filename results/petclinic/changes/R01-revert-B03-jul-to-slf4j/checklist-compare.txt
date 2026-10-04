@@ -1,0 +1,8 @@
+== h2
+58 baseline items, 58 candidate items, 0 differences
+== mysql
+58 baseline items, 58 candidate items, 1 differences
+  DIFF db-row [signature]: baseline='rows=1' candidate='rows='
+== postgres
+58 baseline items, 58 candidate items, 1 differences
+  DIFF db-row [signature]: baseline='rows=1' candidate='rows='

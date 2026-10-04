@@ -1,0 +1,1 @@
+d626b25022e4e2488451393490c4056b5e78101f C07-jaxb-runtime: exclude org.glassfish.jaxb:jaxb-runtime everywhere

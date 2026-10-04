@@ -1,0 +1,14 @@
+diff --git a/pom.xml b/pom.xml
+index 36386e9..5571b1a 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -277,6 +277,9 @@
+       <plugin>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-maven-plugin</artifactId>
++        <configuration>
++          <includeTools>false</includeTools>
++        </configuration>
+         <executions>
+           <execution>
+             <!-- Spring Boot Actuator displays build-related information

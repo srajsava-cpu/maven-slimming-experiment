@@ -1,0 +1,1 @@
+e4b5e3a3e66fc24dcfdd6dfc201e6454fe1403c4 C04-no-jarmode-tools: spring-boot-maven-plugin: includeTools=false (drop spring-boot-jarmode-tools)

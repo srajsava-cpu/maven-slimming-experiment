@@ -1,0 +1,1 @@
+a18eb526f70ef406d2f1f52466adf5e8f808f728 B19-boot-validation: exclude org.springframework.boot:spring-boot-validation everywhere

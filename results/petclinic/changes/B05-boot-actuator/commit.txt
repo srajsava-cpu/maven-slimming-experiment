@@ -1,0 +1,1 @@
+49b659aab1dfe0cdc8cb81f1d99763964da59e5f B05-boot-actuator: exclude org.springframework.boot:spring-boot-actuator everywhere

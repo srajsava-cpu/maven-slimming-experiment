@@ -1,0 +1,1 @@
+f8385b5f88449864b0ecf19b5cee53f18ac6791f C06-jakarta-xml-bind-api: remove jakarta.xml.bind:jakarta.xml.bind-api

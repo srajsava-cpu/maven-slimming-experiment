@@ -1,0 +1,16 @@
+diff --git a/pom.xml b/pom.xml
+index db5b9f7..0b6691f 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -112,11 +112,6 @@
+       <scope>runtime</scope>
+     </dependency>
+ 
+-    <dependency>
+-      <groupId>org.springframework.boot</groupId>
+-      <artifactId>spring-boot-devtools</artifactId>
+-      <optional>true</optional>
+-    </dependency>
+ 
+     <dependency>
+       <groupId>org.springframework.boot</groupId>

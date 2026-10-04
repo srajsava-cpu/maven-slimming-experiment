@@ -1,0 +1,14 @@
+Deleted Containers:
+0180b30c00a0d2efddc1c2a628b13e62cab462763cb5ae0b9d41ca52c0819e3d
+
+Total reclaimed space: 16.38kB
+Deleted Volumes:
+pack-cache-2251aef8bec1.build
+pack-cache-ff54181b9d9d.build
+pack-cache-ff54181b9d9d.launch
+pack-cache-2251aef8bec1.launch
+pack-cache-c83e849d9977.build
+pack-cache-c83e849d9977.launch
+d8ab55adf0306ec402646d6f52e60ca6aa684b6b4fa5e903193cc58840669741
+
+Total reclaimed space: 1.097GB

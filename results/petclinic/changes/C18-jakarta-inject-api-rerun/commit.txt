@@ -1,0 +1,1 @@
+0b396b8f8691865047b34e6764a948425636c47e C18-jakarta-inject-api-rerun: re-run after MySQL readiness fix, on free-only branch: exclude jakarta.inject-api

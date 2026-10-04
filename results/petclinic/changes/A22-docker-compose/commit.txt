@@ -1,0 +1,1 @@
+a1dde99881e8ff2322c7a5da85b4f315fff0d1b4 A22-docker-compose: remove org.springframework.boot:spring-boot-docker-compose

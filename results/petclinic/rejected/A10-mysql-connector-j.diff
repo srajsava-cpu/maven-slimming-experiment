@@ -1,0 +1,16 @@
+diff --git a/pom.xml b/pom.xml
+index 0b6691f..fcf223f 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -83,11 +83,6 @@
+       <artifactId>caffeine</artifactId>
+       <scope>runtime</scope>
+     </dependency>
+-    <dependency>
+-      <groupId>com.mysql</groupId>
+-      <artifactId>mysql-connector-j</artifactId>
+-      <scope>runtime</scope>
+-    </dependency>
+     <dependency>
+       <groupId>org.postgresql</groupId>
+       <artifactId>postgresql</artifactId>

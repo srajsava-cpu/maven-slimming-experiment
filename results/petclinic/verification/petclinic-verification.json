@@ -1,0 +1,107 @@
+{
+  "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+  "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\"",
+  "baseline": {
+    "verify_exit": 0,
+    "artifact_bytes": 65831325,
+    "lib_count": 93,
+    "resolved_count": 171,
+    "tests": {
+      "run": 81,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "org.springframework.samples.petclinic.MySqlIntegrationTests": 2,
+      "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+      "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+      "org.springframework.samples.petclinic.PostgresIntegrationTests": 2,
+      "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+      "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+      "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+      "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+      "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+      "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+      "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+      "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+      "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+      "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+      "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+      "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+      "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+      "org.springframework.samples.petclinic.vet.VetTests": 1
+    },
+    "sha256": "c06eabdea88cf3c6c363909e59b790dff7794bbd74007dc303ac0d67c7ff2f0f",
+    "report_files": 18
+  },
+  "free": {
+    "verify_exit": 0,
+    "artifact_bytes": 62318329,
+    "lib_count": 83,
+    "resolved_count": 150,
+    "tests": {
+      "run": 81,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "org.springframework.samples.petclinic.MySqlIntegrationTests": 2,
+      "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+      "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+      "org.springframework.samples.petclinic.PostgresIntegrationTests": 2,
+      "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+      "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+      "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+      "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+      "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+      "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+      "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+      "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+      "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+      "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+      "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+      "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+      "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+      "org.springframework.samples.petclinic.vet.VetTests": 1
+    },
+    "sha256": "3ad2df4e8d00a984c9752a6b97a702a5ae26b189ae6395a442cca0834a95ef13",
+    "report_files": 18
+  },
+  "full": {
+    "verify_exit": 0,
+    "artifact_bytes": 58504865,
+    "lib_count": 80,
+    "resolved_count": 131,
+    "tests": {
+      "run": 77,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "org.springframework.samples.petclinic.PetClinicConcurrencyTests": 1,
+      "org.springframework.samples.petclinic.PetClinicIntegrationTests": 3,
+      "org.springframework.samples.petclinic.model.ValidatorTests": 2,
+      "org.springframework.samples.petclinic.owner.OwnerControllerTests": 18,
+      "org.springframework.samples.petclinic.owner.OwnerTests": 2,
+      "org.springframework.samples.petclinic.owner.PetControllerTests": 14,
+      "org.springframework.samples.petclinic.owner.PetTypeFormatterTests": 3,
+      "org.springframework.samples.petclinic.owner.PetValidatorTests": 7,
+      "org.springframework.samples.petclinic.owner.VisitControllerTests": 5,
+      "org.springframework.samples.petclinic.service.ClinicServiceTests": 12,
+      "org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": 2,
+      "org.springframework.samples.petclinic.system.CrashControllerTests": 1,
+      "org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": 2,
+      "org.springframework.samples.petclinic.system.WelcomeControllerTests": 1,
+      "org.springframework.samples.petclinic.vet.VetControllerTests": 3,
+      "org.springframework.samples.petclinic.vet.VetTests": 1
+    },
+    "sha256": "bc38acbae3c4016fac7ef8c3f375e464f54a7ded3271d938f1ba865dfa26bf1c",
+    "report_files": 16
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "project": "https://github.com/spring-projects/spring-petclinic",
+  "baseline": {
+    "git_commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+    "verify_exit": 0,
+    "artifact_bytes": 65831325,
+    "lib_count": 93,
+    "resolved_count": 171,
+    "dependency_tree_exit": 0,
+    "tests": {
+      "run": 81,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "surefire-reports:org.springframework.samples.petclinic.MySqlIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicConcurrencyTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicIntegrationTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PostgresIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.model.ValidatorTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerControllerTests": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetControllerTests": {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetTypeFormatterTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetValidatorTests": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.VisitControllerTests": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.service.ClinicServiceTests": {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.WelcomeControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetControllerTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "report_files": 18,
+    "sha256": "c06eabdea88cf3c6c363909e59b790dff7794bbd74007dc303ac0d67c7ff2f0f",
+    "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\""
+  },
+  "free": {
+    "git_commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+    "verify_exit": 0,
+    "artifact_bytes": 62329681,
+    "lib_count": 84,
+    "resolved_count": 151,
+    "dependency_tree_exit": 0,
+    "tests": {
+      "run": 81,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "surefire-reports:org.springframework.samples.petclinic.MySqlIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicConcurrencyTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicIntegrationTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PostgresIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.model.ValidatorTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerControllerTests": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetControllerTests": {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetTypeFormatterTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetValidatorTests": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.VisitControllerTests": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.service.ClinicServiceTests": {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.WelcomeControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetControllerTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "report_files": 18,
+    "sha256": "753c32ffae00425a596ced3bb705a58462d51ecb8a3ceb8d411f1ec7983656c9",
+    "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\""
+  },
+  "full": {
+    "git_commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+    "verify_exit": 0,
+    "artifact_bytes": 58516229,
+    "lib_count": 81,
+    "resolved_count": 132,
+    "dependency_tree_exit": 0,
+    "tests": {
+      "run": 77,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "per_class": {
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicConcurrencyTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.PetClinicIntegrationTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.model.ValidatorTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerControllerTests": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.OwnerTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetControllerTests": {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetTypeFormatterTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.PetValidatorTests": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.owner.VisitControllerTests": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.service.ClinicServiceTests": {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerIntegrationTests": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.CrashControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.I18nPropertiesSyncTest": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.system.WelcomeControllerTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetControllerTests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire-reports:org.springframework.samples.petclinic.vet.VetTests": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "report_files": 16,
+    "sha256": "1ecf44b9d49eb297ffbaf630b75135927e0615969bfece2b7a96fcf3f8268f5b",
+    "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\""
+  }
+}

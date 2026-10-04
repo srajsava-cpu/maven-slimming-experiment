@@ -1,0 +1,31 @@
+{
+ "verify_exit": 0,
+ "tests_run": 81,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "baseline_tests_run": 81,
+ "baseline_skipped": 0,
+ "test_classes_missing_or_changed": {},
+ "same_tests_as_baseline": true,
+ "artifact_bytes": 62318298,
+ "lib_count": 83,
+ "artifact_delta_vs_baseline": -3513027,
+ "libs_removed_vs_baseline": [
+  "HdrHistogram-2.2.2.jar",
+  "aspectjweaver-1.9.25.1.jar",
+  "error_prone_annotations-2.49.0.jar",
+  "jakarta.inject-api-2.0.1.jar",
+  "log4j-api-2.25.4.jar",
+  "log4j-to-slf4j-2.25.4.jar",
+  "micrometer-jakarta9-1.17.0.jar",
+  "snakeyaml-2.6.jar",
+  "spring-aspects-7.0.8.jar",
+  "tomcat-embed-websocket-11.0.22.jar"
+ ],
+ "libs_added_vs_baseline": [],
+ "resolved_total": 150,
+ "checklist": "pass",
+ "tests_pass": true,
+ "verdict": "KEEP-ELIGIBLE"
+}
