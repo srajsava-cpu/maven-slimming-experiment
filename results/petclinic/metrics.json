@@ -818,7 +818,9 @@
    "resolved_total": 170,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A02-starter-actuator": {
    "verify_exit": 0,
@@ -847,7 +849,9 @@
    "resolved_total": 170,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A03-starter-cache": {
    "verify_exit": 1,
@@ -935,7 +939,9 @@
    "resolved_total": 170,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A04-starter-data-jpa": {
    "verify_exit": 1,
@@ -1023,7 +1029,9 @@
    "resolved_total": 170,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A05-starter-thymeleaf": {
    "verify_exit": 0,
@@ -1049,7 +1057,9 @@
    "resolved_total": 170,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A06-starter-validation": {
    "verify_exit": 1,
@@ -1137,7 +1147,9 @@
    "resolved_total": 170,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A07-starter-webmvc": {
    "verify_exit": 1,
@@ -1225,7 +1237,9 @@
    "resolved_total": 170,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A08-h2": {
    "verify_exit": 1,
@@ -1240,7 +1254,9 @@
    "resolved_total": 169,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A09-caffeine": {
    "verify_exit": 0,
@@ -1263,7 +1279,9 @@
    "resolved_total": 168,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A10-mysql-connector-j": {
    "verify_exit": 1,
@@ -1283,7 +1301,9 @@
    "resolved_total": 169,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A11-postgresql": {
    "verify_exit": 1,
@@ -1298,7 +1318,9 @@
    "resolved_total": 169,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A12-webjars-locator-lite": {
    "verify_exit": 0,
@@ -1320,7 +1342,9 @@
    "resolved_total": 169,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A13-webjar-bootstrap": {
    "verify_exit": 0,
@@ -1342,7 +1366,9 @@
    "resolved_total": 169,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A14-webjar-font-awesome": {
    "verify_exit": 0,
@@ -1364,7 +1390,9 @@
    "resolved_total": 169,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A15-starter-data-jpa-test": {
    "verify_exit": 1,
@@ -1452,7 +1480,9 @@
    "resolved_total": 165,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A16-starter-restclient": {
    "verify_exit": 0,
@@ -1472,7 +1502,9 @@
    "resolved_total": 170,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A17-starter-restclient-test": {
    "verify_exit": 1,
@@ -1560,7 +1592,9 @@
    "resolved_total": 165,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A18-starter-thymeleaf-test": {
    "verify_exit": 0,
@@ -1580,7 +1614,9 @@
    "resolved_total": 169,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A19-starter-validation-test": {
    "verify_exit": 0,
@@ -1600,7 +1636,9 @@
    "resolved_total": 168,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A20-starter-webmvc-test": {
    "verify_exit": 1,
@@ -1688,7 +1726,9 @@
    "resolved_total": 165,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A21-starter-actuator-test": {
    "verify_exit": 0,
@@ -1708,7 +1748,9 @@
    "resolved_total": 164,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A22-docker-compose-rerun": {
    "verify_exit": 1,
@@ -1723,7 +1765,10 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after the disk incident (INCIDENTS #1); same verdict as the original run"
   },
   "A22-docker-compose": {
    "verify_exit": 1,
@@ -1738,7 +1783,9 @@
    "resolved_total": 163,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "A23-starter-cache-test": {
    "verify_exit": 0,
@@ -1758,7 +1805,9 @@
    "resolved_total": 162,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B01-snakeyaml": {
    "verify_exit": 0,
@@ -1780,7 +1829,9 @@
    "resolved_total": 161,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B02-HdrHistogram": {
    "verify_exit": 0,
@@ -1803,7 +1854,9 @@
    "resolved_total": 160,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B03-jul-to-slf4j": {
    "verify_exit": 0,
@@ -1827,7 +1880,11 @@
    "resolved_total": 159,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "passed the strict rule with the 57-item checklist, later found to break log routing; rejected retroactively and reverted by R01 (INCIDENTS #8)",
+   "verdict_strict_rule": "KEEP-ELIGIBLE"
   },
   "B04-micrometer-jakarta9": {
    "verify_exit": 0,
@@ -1852,7 +1909,9 @@
    "resolved_total": 158,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B05-boot-actuator": {
    "verify_exit": 1,
@@ -1867,7 +1926,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B06-boot-actuator-autoconfigure": {
    "verify_exit": 0,
@@ -1894,7 +1955,9 @@
    "resolved_total": 156,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B07-boot-micrometer-metrics": {
    "verify_exit": 0,
@@ -1922,7 +1985,9 @@
    "resolved_total": 155,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B08-boot-micrometer-observation": {
    "verify_exit": 1,
@@ -1937,7 +2002,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B09-boot-health": {
    "verify_exit": 0,
@@ -1963,7 +2030,9 @@
    "resolved_total": 157,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B10-boot-web-server": {
    "verify_exit": 1,
@@ -1978,7 +2047,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B11-boot-tomcat": {
    "verify_exit": 1,
@@ -1993,7 +2064,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B12-boot-http-converter": {
    "verify_exit": 1,
@@ -2008,7 +2081,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B13-boot-servlet": {
    "verify_exit": 1,
@@ -2023,7 +2098,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B14-boot-thymeleaf": {
    "verify_exit": 1,
@@ -2038,7 +2115,9 @@
    "resolved_total": 153,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B15-thymeleaf-spring6": {
    "verify_exit": 1,
@@ -2053,7 +2132,9 @@
    "resolved_total": 154,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B16-attoparser": {
    "verify_exit": 1,
@@ -2068,7 +2149,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B17-unbescape": {
    "verify_exit": 1,
@@ -2083,7 +2166,9 @@
    "resolved_total": 157,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B18-boot-data-commons": {
    "verify_exit": 0,
@@ -2109,7 +2194,9 @@
    "resolved_total": 157,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B19-boot-validation": {
    "verify_exit": 1,
@@ -2197,7 +2284,9 @@
    "resolved_total": 154,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B20-boot-data-jpa": {
    "verify_exit": 1,
@@ -2285,7 +2374,9 @@
    "resolved_total": 141,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B21-commons-codec-test": {
    "verify_exit": 0,
@@ -2310,7 +2401,9 @@
    "resolved_total": 157,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B22-awaitility-test": {
    "verify_exit": 0,
@@ -2335,10 +2428,14 @@
    "resolved_total": 156,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B23-micrometer-observation-test": {
-   "noop": "NO-OP: already absent from the resolved graph; removed together with its parent spring-boot-starter-actuator-test by A21"
+   "noop": "NO-OP: already absent from the resolved graph; removed together with its parent spring-boot-starter-actuator-test by A21",
+   "final_status": "no-op",
+   "rule_applied": null
   },
   "B24-boot-restclient-test": {
    "verify_exit": 0,
@@ -2363,13 +2460,19 @@
    "resolved_total": 155,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "B25-boot-micrometer-metrics-test": {
-   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-actuator-test by A21"
+   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-actuator-test by A21",
+   "final_status": "no-op",
+   "rule_applied": null
   },
   "B26-boot-cache-test": {
-   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-cache-test by A23"
+   "noop": "NO-OP: already absent; removed with its parent spring-boot-starter-cache-test by A23",
+   "final_status": "no-op",
+   "rule_applied": null
   },
   "C01-aspectjweaver": {
    "verify_exit": 0,
@@ -2395,7 +2498,9 @@
    "resolved_total": 154,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C02-spring-aspects": {
    "verify_exit": 0,
@@ -2422,7 +2527,9 @@
    "resolved_total": 153,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C03-tomcat-embed-websocket": {
    "verify_exit": 0,
@@ -2450,7 +2557,9 @@
    "resolved_total": 152,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C04-no-jarmode-tools": {
    "verify_exit": 0,
@@ -2479,7 +2588,9 @@
    "resolved_total": 152,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C05-cache-api": {
    "verify_exit": 1,
@@ -2567,7 +2678,9 @@
    "resolved_total": 151,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C06-jakarta-xml-bind-api": {
    "verify_exit": 1,
@@ -2655,7 +2768,9 @@
    "resolved_total": 152,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C07-jaxb-runtime-rerun": {
    "verify_exit": 0,
@@ -2692,7 +2807,10 @@
    "resolved_total": 144,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after the disk incident (INCIDENTS #1); same verdict as the original run"
   },
   "C07-jaxb-runtime": {
    "verify_exit": 0,
@@ -2726,7 +2844,9 @@
    "resolved_total": 147,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C08-byte-buddy-rerun": {
    "verify_exit": 1,
@@ -2741,7 +2861,10 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after the disk incident (INCIDENTS #1); same verdict as the original run"
   },
   "C08-byte-buddy": {
    "verify_exit": 1,
@@ -2756,7 +2879,9 @@
    "resolved_total": 151,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C09-log4j-to-slf4j": {
    "verify_exit": 0,
@@ -2787,10 +2912,14 @@
    "resolved_total": 150,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C10-log4j-api": {
-   "noop": "NO-OP: already absent; log4j-api was only a dependency of log4j-to-slf4j, excluded by C09"
+   "noop": "NO-OP: already absent; log4j-api was only a dependency of log4j-to-slf4j, excluded by C09",
+   "final_status": "no-op",
+   "rule_applied": null
   },
   "C11-error-prone-annotations": {
    "verify_exit": 0,
@@ -2822,7 +2951,9 @@
    "resolved_total": 149,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C12-jspecify-rerun": {
    "verify_exit": 1,
@@ -2837,7 +2968,10 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after the disk incident (INCIDENTS #1); same verdict as the original run"
   },
   "C12-jspecify": {
    "verify_exit": 1,
@@ -2852,7 +2986,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C13-antlr4-runtime-rerun": {
    "verify_exit": 1,
@@ -2867,7 +3003,10 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after the disk incident (INCIDENTS #1); same verdict as the original run"
   },
   "C13-antlr4-runtime": {
    "verify_exit": 1,
@@ -2882,7 +3021,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C14-HikariCP": {
    "verify_exit": 1,
@@ -2897,7 +3038,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C15-tomcat-embed-el": {
    "verify_exit": 1,
@@ -2912,7 +3055,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C16-jboss-logging": {
    "verify_exit": 1,
@@ -2927,7 +3072,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C17-hibernate-models": {
    "verify_exit": 1,
@@ -2942,7 +3089,9 @@
    "resolved_total": 148,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres"
   },
   "C18-jakarta-inject-api-on-full": {
    "verify_exit": 0,
@@ -2985,7 +3134,11 @@
    "resolved_total": 131,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "kept",
+   "rule_applied": "strict rule relative to the previous kept state on the full branch (F03/R01 state): same 77 tests and the same checklist results as that state; only the expected db-row differences on mysql/postgres; decided manually",
+   "note": "C18 applied to the full branch after its re-run was kept",
+   "verdict_strict_rule": "REJECT"
   },
   "C18-jakarta-inject-api-rerun": {
    "verify_exit": 0,
@@ -3016,7 +3169,11 @@
    "resolved_total": 150,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "kept",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "re-run after MySQL readiness fix (INCIDENTS #9); evaluated on the free + conditional branch",
+   "verdict_strict_rule": "KEEP-ELIGIBLE"
   },
   "C18-jakarta-inject-api": {
    "verify_exit": 0,
@@ -3049,7 +3206,11 @@
    "resolved_total": 148,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "superseded",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "failed only on the mysql profile because of a harness readiness race (INCIDENTS #9); superseded by C18-jakarta-inject-api-rerun",
+   "verdict_strict_rule": "REJECT"
   },
   "F01-drop-mysql": {
    "verify_exit": 0,
@@ -3087,7 +3248,11 @@
    "resolved_total": 145,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "kept",
+   "rule_applied": "declared narrower rule (feature-removing branch): verify passes; tests identical to baseline except the removed database's own test classes; checklist identical to baseline on h2 and every remaining profile, the removed profile expected to differ (it falls back to H2: only db-row differs); decided manually",
+   "note": "feature-removing",
+   "verdict_strict_rule": "REJECT"
   },
   "F01a-drop-mysql-too-broad": {
    "verify_exit": 1,
@@ -3175,7 +3340,11 @@
    "resolved_total": 133,
    "checklist": "skipped",
    "tests_pass": false,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "rejected",
+   "rule_applied": "declared narrower rule (feature-removing branch): verify passes; tests identical to baseline except the removed database's own test classes; checklist identical to baseline on h2 and every remaining profile, the removed profile expected to differ (it falls back to H2: only db-row differs); decided manually",
+   "note": "test compile error; redone as F01",
+   "verdict_strict_rule": "REJECT"
   },
   "F02-drop-postgres": {
    "verify_exit": 0,
@@ -3218,7 +3387,11 @@
    "resolved_total": 143,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "kept",
+   "rule_applied": "declared narrower rule (feature-removing branch): verify passes; tests identical to baseline except the removed database's own test classes; checklist identical to baseline on h2 and every remaining profile, the removed profile expected to differ (it falls back to H2: only db-row differs); decided manually",
+   "note": "feature-removing",
+   "verdict_strict_rule": "REJECT"
   },
   "F03-drop-testcontainers": {
    "verify_exit": 0,
@@ -3261,7 +3434,11 @@
    "resolved_total": 131,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "kept",
+   "rule_applied": "strict rule relative to the previous kept state on the full branch (F03/R01 state): same 77 tests and the same checklist results as that state; only the expected db-row differences on mysql/postgres; decided manually",
+   "note": "feature-removing consequence of F01/F02",
+   "verdict_strict_rule": "REJECT"
   },
   "R01-revert-B03-jul-to-slf4j": {
    "verify_exit": 0,
@@ -3303,7 +3480,11 @@
    "resolved_total": 132,
    "checklist": "FAIL",
    "tests_pass": true,
-   "verdict": "REJECT"
+   "verdict": "REJECT",
+   "final_status": "kept",
+   "rule_applied": "strict rule relative to the previous kept state on the full branch (F03/R01 state): same 77 tests and the same checklist results as that state; only the expected db-row differences on mysql/postgres; decided manually",
+   "note": "revert of B03; restores log routing (log-routing item = baseline)",
+   "verdict_strict_rule": "REJECT"
   },
   "S-free-only": {
    "verify_exit": 0,
@@ -3333,7 +3514,11 @@
    "resolved_total": 151,
    "checklist": "pass",
    "tests_pass": true,
-   "verdict": "KEEP-ELIGIBLE"
+   "verdict": "KEEP-ELIGIBLE",
+   "final_status": "state-check",
+   "rule_applied": "strict: verify passes, same tests as baseline (none newly skipped), every checklist item identical to baseline on h2, mysql, postgres",
+   "note": "evaluation of the assembled free + conditional state, not a candidate",
+   "verdict_strict_rule": "KEEP-ELIGIBLE"
   }
  },
  "classification": {
@@ -3420,13 +3605,22 @@
    "checklist_only": 11,
    "neither": 1
   },
-  "missed_by_test_suite": "12 of 45"
+  "missed_by_test_suite": "12 of 45",
+  "final_status_over_80_evaluations": {
+   "kept": 24,
+   "rejected": 50,
+   "no-op": 4,
+   "superseded": 1,
+   "state-check": 1,
+   "explanation": "kept 24 = 22 unique kept changes + R01 (revert of B03) + C18 re-applied on the full branch; rejected 50 = 44 unique rejected + F01a + 5 disk-incident re-runs"
+  }
  },
  "corrections": [
   "group-C total previously stated as 2,950,725 B; listed artifact deltas sum to 2,938,717 B; report now uses exact library bytes (2,933,561 B)",
   "'8 exclusions of runtime libraries' corrected: 9 runtime-library changes (10 JARs) in free+conditional",
   "log4j-to-slf4j reclassified from free to conditional"
  ],
+ "candidates_field_note": "`verdict`/`checklist` = mechanical strict-rule output against baseline; `final_status` = actual decision; `rule_applied` = rule used for that decision",
  "verification": {
   "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
   "mvnw_version": "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)\nMaven home: /tmp/mse-cache/m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f\nJava version: 17.0.20.1, vendor: Microsoft, runtime: /usr/local/sdkman/candidates/java/17.0.20+1-ms\nDefault locale: en, platform encoding: UTF-8\nOS name: \"linux\", version: \"6.8.0-1064-azure\", arch: \"amd64\", family: \"unix\"",
